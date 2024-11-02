@@ -156,23 +156,23 @@
     <section class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <a href="#" class="w-full block h-[300px]">
-                    <img src="./images/slide-1.jpeg" alt="banner" class="w-full h-full block rounded-lg">
+                <a href="#" class="w-full block ">
+                    <img src="./images/slide-1.jpeg" alt="banner" class="w-full block rounded-lg object-cover">
                 </a>                
             </div>
             <div class="swiper-slide">
-                <a href="#" class="w-full block h-[300px]">
-                    <img src="./images/slide-2.jpg" alt="banner" class="w-full h-full block rounded-lg">
+                <a href="#" class="w-full block ">
+                    <img src="./images/slide-2.jpg" alt="banner" class="w-full block rounded-lg object-cover">
                 </a>              
             </div>
             <div class="swiper-slide">
-                <a href="#" class="w-full block h-[300px]">
-                    <img src="./images/slide-1.jpeg" alt="banner" class="w-full h-full block rounded-lg">
+                <a href="#" class="w-full block ">
+                    <img src="./images/slide-1.jpeg" alt="banner" class="w-full block rounded-lg object-cover">
                 </a>               
             </div>
             <div class="swiper-slide">
-                <a href="#" class="w-full block h-[300px]">
-                    <img src="./images/slide-2.jpg" alt="banner" class="w-full h-full block rounded-lg">
+                <a href="#" class="w-full block ">
+                    <img src="./images/slide-2.jpg" alt="banner" class="w-full block rounded-lg object-cover">
                 </a>               
             </div>            
         </div>
@@ -180,10 +180,11 @@
 </section>
 
 
+
 <!-- product category -->
 
 
-<section class="bg-gray-100 py-10">
+<section class="bg-gray-100 py-2 md:py-5">
     <div class="relative flex items-center wrapper">
         <!-- Left Slide Button -->
         <button id="slideLefttwo" class="absolute left-0 z-10 bg-gray-200 p-2 rounded-full shadow-lg focus:outline-none">
@@ -193,122 +194,103 @@
         </button>
 
         <!-- Scrollable Product Cards -->
-        <div id="slidertwo" class="flex gap-5 smooth-scroll overflow-x-auto scrollbar-hide pb-2">
+        <div id="slidertwo" class="flex justify-between w-full smooth-scroll overflow-x-auto scrollbar-hide">
 
             <!-- Category Card -->
-            <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-4 flex flex-col items-center min-w-[150px]">
+            <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-2 sm:p-2 md:p-3 lg:p-4 flex flex-col items-center min-w-[50px] sm:min-w-[65px] md:min-w-[90px] lg:min-w-[125px] max-w-[50px] sm:max-w-[65px] md:max-w-[90px] lg:max-w-[125px] mr-[20px]">
                 <a href="#" class="flex flex-col items-center">
-                    <div class="rounded-full p-4 mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
-                        <img src="./images/watch.png" alt="watch" class="w-[40px] h-[40px]">
+                    <div class="rounded-full p-[3px] sm:p-[10px] md:p-[10px] lg:p-[16px] mb-[6px] md:mb-2 lg:mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
+                        <img src="./images/watch.png" alt="watch" class="w-[20px] sm:w-[25px] md:w-[30px] lg:w-[40px] h-[20px] sm:h-[25px] md:h-[30px] lg:h-[40px]">
                     </div>
-                    <p class="text-sm font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
+                    <p class="text-[6px] sm:text-[8px] leading-[8px] md:text-xs lg:text-sm font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
                 </a>
             </div>
 
 
             <!-- Category Card -->
-            <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-4 flex flex-col items-center min-w-[150px]">
+            <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-2 sm:p-2 md:p-3 lg:p-4 flex flex-col items-center  min-w-[50px] sm:min-w-[65px] md:min-w-[90px] lg:min-w-[125px] max-w-[50px] sm:max-w-[65px] md:max-w-[90px] lg:max-w-[125px] mr-[20px]">
                 <a href="#" class="flex flex-col items-center">
-                    <div class="rounded-full p-4 mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
-                        <img src="./images/watch.png" alt="watch" class="w-[40px] h-[40px]">
+                    <div class="rounded-full p-[3px] sm:p-[10px] md:p-[10px] lg:p-[16px] mb-[6px] md:mb-2 lg:mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
+                        <img src="./images/watch.png" alt="watch" class="w-[20px] sm:w-[25px] md:w-[30px] lg:w-[40px] h-[20px] sm:h-[25px] md:h-[30px] lg:h-[40px]">
                     </div>
-                    <p class="text-sm font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
+                    <p class="text-[6px] leading-[8px] md:text-xs lg:text-sm  font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
                 </a>
             </div>
 
 
             <!-- Category Card -->
-            <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-4 flex flex-col items-center min-w-[150px]">
+            <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-2 sm:p-2 md:p-3 lg:p-4 flex flex-col items-center  min-w-[50px] sm:min-w-[65px] md:min-w-[90px] lg:min-w-[125px] max-w-[50px] sm:max-w-[65px] md:max-w-[90px] lg:max-w-[125px] mr-[20px]">
                 <a href="#" class="flex flex-col items-center">
-                    <div class="rounded-full p-4 mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
-                        <img src="./images/watch.png" alt="watch" class="w-[40px] h-[40px]">
+                    <div class="rounded-full p-[3px] sm:p-[10px] md:p-[10px] lg:p-[16px] mb-[6px] md:mb-2 lg:mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
+                        <img src="./images/watch.png" alt="watch" class="w-[20px] sm:w-[25px] md:w-[30px] lg:w-[40px] h-[20px] sm:h-[25px] md:h-[30px] lg:h-[40px]">
                     </div>
-                    <p class="text-sm font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
+                    <p class="text-[6px] leading-[8px] md:text-xs lg:text-sm  font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
                 </a>
             </div>
 
             <!-- Category Card -->
-            <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-4 flex flex-col items-center min-w-[150px]">
+            <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-2 sm:p-2 md:p-3 lg:p-4 flex flex-col items-center  min-w-[50px] sm:min-w-[65px] md:min-w-[90px] lg:min-w-[125px] max-w-[50px] sm:max-w-[65px] md:max-w-[90px] lg:max-w-[125px] mr-[20px]">
                 <a href="#" class="flex flex-col items-center">
-                    <div class="rounded-full p-4 mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
-                        <img src="./images/watch.png" alt="watch" class="w-[40px] h-[40px]">
+                    <div class="rounded-full p-[3px] sm:p-[10px] md:p-[10px] lg:p-[16px] mb-[6px] md:mb-2 lg:mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
+                        <img src="./images/watch.png" alt="watch" class="w-[20px] sm:w-[25px] md:w-[30px] lg:w-[40px] h-[20px] sm:h-[25px] md:h-[30px] lg:h-[40px]">
                     </div>
-                    <p class="text-sm font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
+                    <p class="text-[6px] leading-[8px] md:text-xs lg:text-sm  font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
                 </a>
             </div>
 
             <!-- Category Card -->
-            <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-4 flex flex-col items-center min-w-[150px]">
+            <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-2 sm:p-2 md:p-3 lg:p-4 flex flex-col items-center  min-w-[50px] sm:min-w-[65px] md:min-w-[90px] lg:min-w-[125px] max-w-[50px] sm:max-w-[65px] md:max-w-[90px] lg:max-w-[125px] mr-[20px]">
                 <a href="#" class="flex flex-col items-center">
-                    <div class="rounded-full p-4 mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
-                        <img src="./images/watch.png" alt="watch" class="w-[40px] h-[40px]">
+                    <div class="rounded-full p-[3px] sm:p-[10px] md:p-[10px] lg:p-[16px] mb-[6px] md:mb-2 lg:mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
+                        <img src="./images/watch.png" alt="watch" class="w-[20px] sm:w-[25px] md:w-[30px] lg:w-[40px] h-[20px] sm:h-[25px] md:h-[30px] lg:h-[40px]">
                     </div>
-                    <p class="text-sm font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
+                    <p class="text-[6px] leading-[8px] md:text-xs lg:text-sm  font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
                 </a>
             </div>
 
             <!-- Category Card -->
-            <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-4 flex flex-col items-center min-w-[150px]">
+            <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-2 sm:p-2 md:p-3 lg:p-4 flex flex-col items-center  min-w-[50px] sm:min-w-[65px] md:min-w-[90px] lg:min-w-[125px] max-w-[50px] sm:max-w-[65px] md:max-w-[90px] lg:max-w-[125px] mr-[20px]">
                 <a href="#" class="flex flex-col items-center">
-                    <div class="rounded-full p-4 mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
-                        <img src="./images/watch.png" alt="watch" class="w-[40px] h-[40px]">
+                    <div class="rounded-full p-[3px] sm:p-[10px] md:p-[10px] lg:p-[16px] mb-[6px] md:mb-2 lg:mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
+                        <img src="./images/watch.png" alt="watch" class="w-[20px] sm:w-[25px] md:w-[30px] lg:w-[40px] h-[20px] sm:h-[25px] md:h-[30px] lg:h-[40px]">
                     </div>
-                    <p class="text-sm font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
+                    <p class="text-[6px] leading-[8px] md:text-xs lg:text-sm  font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
+                </a>
+            </div>
+
+             <!-- Category Card -->
+             <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-2 sm:p-2 md:p-3 lg:p-4 flex flex-col items-center  min-w-[50px] sm:min-w-[65px] md:min-w-[90px] lg:min-w-[125px] max-w-[50px] sm:max-w-[65px] md:max-w-[90px] lg:max-w-[125px] mr-[20px]">
+                <a href="#" class="flex flex-col items-center">
+                    <div class="rounded-full p-[3px] sm:p-[10px] md:p-[10px] lg:p-[16px] mb-[6px] md:mb-2 lg:mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
+                        <img src="./images/watch.png" alt="watch" class="w-[20px] sm:w-[25px] md:w-[30px] lg:w-[40px] h-[20px] sm:h-[25px] md:h-[30px] lg:h-[40px]">
+                    </div>
+                    <p class="text-[6px] leading-[8px] md:text-xs lg:text-sm  font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
                 </a>
             </div>
 
             <!-- Category Card -->
-            <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-4 flex flex-col items-center min-w-[150px]">
+            <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-2 sm:p-2 md:p-3 lg:p-4 flex flex-col items-center  min-w-[50px] sm:min-w-[65px] md:min-w-[90px] lg:min-w-[125px] max-w-[50px] sm:max-w-[65px] md:max-w-[90px] lg:max-w-[125px] mr-[20px]">
                 <a href="#" class="flex flex-col items-center">
-                    <div class="rounded-full p-4 mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
-                        <img src="./images/watch.png" alt="watch" class="w-[40px] h-[40px]">
+                    <div class="rounded-full p-[3px] sm:p-[10px] md:p-[10px] lg:p-[16px] mb-[6px] md:mb-2 lg:mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
+                        <img src="./images/watch.png" alt="watch" class="w-[20px] sm:w-[25px] md:w-[30px] lg:w-[40px] h-[20px] sm:h-[25px] md:h-[30px] lg:h-[40px]">
                     </div>
-                    <p class="text-sm font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
+                    <p class="text-[6px] leading-[8px] md:text-xs lg:text-sm  font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
                 </a>
             </div>
 
             <!-- Category Card -->
-            <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-4 flex flex-col items-center min-w-[150px]">
+            <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-2 sm:p-2 md:p-3 lg:p-4 flex flex-col items-center  min-w-[50px] sm:min-w-[65px] md:min-w-[90px] lg:min-w-[125px] max-w-[50px] sm:max-w-[65px] md:max-w-[90px] lg:max-w-[125px] mr-[20px]">
                 <a href="#" class="flex flex-col items-center">
-                    <div class="rounded-full p-4 mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
-                        <img src="./images/watch.png" alt="watch" class="w-[40px] h-[40px]">
+                    <div class="rounded-full p-[3px] sm:p-[10px] md:p-[10px] lg:p-[16px] mb-[6px] md:mb-2 lg:mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
+                        <img src="./images/watch.png" alt="watch" class="w-[20px] sm:w-[25px] md:w-[30px] lg:w-[40px] h-[20px] sm:h-[25px] md:h-[30px] lg:h-[40px]">
                     </div>
-                    <p class="text-sm font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
+                    <p class="text-[6px] leading-[8px] md:text-xs lg:text-sm  font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
                 </a>
             </div>
 
+            
 
-            <!-- Category Card -->
-            <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-4 flex flex-col items-center min-w-[150px]">
-                <a href="#" class="flex flex-col items-center">
-                    <div class="rounded-full p-4 mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
-                        <img src="./images/watch.png" alt="watch" class="w-[40px] h-[40px]">
-                    </div>
-                    <p class="text-sm font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
-                </a>
-            </div>
-
-
-            <!-- Category Card -->
-            <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-4 flex flex-col items-center min-w-[150px]">
-                <a href="#" class="flex flex-col items-center">
-                    <div class="rounded-full p-4 mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
-                        <img src="./images/watch.png" alt="watch" class="w-[40px] h-[40px]">
-                    </div>
-                    <p class="text-sm font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
-                </a>
-            </div>
-
-
-            <!-- Category Card -->
-            <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-4 flex flex-col items-center min-w-[150px]">
-                <a href="#" class="flex flex-col items-center">
-                    <div class="rounded-full p-4 mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
-                        <img src="./images/watch.png" alt="watch" class="w-[40px] h-[40px]">
-                    </div>
-                    <p class="text-sm font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
-                </a>
-            </div>
+        
 
             
             
@@ -345,113 +327,78 @@
 
             <!-- Scrollable Product Cards -->
             <div id="slider" class="flex gap-5 smooth-scroll overflow-x-auto scrollbar-hide pb-2">
-                <!-- Product Card 1 -->
-                <div class="min-w-[50%] sm:min-w-[21%] md:w-auto p-3 shadow-lg rounded-xl">
-                    <a href="#">
-                        <img src="./images/iphone.jpeg" alt="iphone 16" class="w-full h-[200px] rounded-lg">
-                    </a>
+                
+                <!-- Product Cards -->
+                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
+                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/iphone.jpeg" alt="iphone 16" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
                     <h3 class="text-[15px] font-normal my-2"><a href="#">iphone 16</a></h3>
                     <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
                     <p class="text-[14px] font-semibold mb-2">QR 800</p>
                 </div>
                 
-                <!-- Product Card 2 -->
-                <div class="min-w-[50%] sm:min-w-[21%] md:w-auto p-3 shadow-lg rounded-xl">
-                    <a href="#">
-                        <img src="./images/macbook.jpeg" alt="macbook air m3" class="w-full h-[200px] rounded-lg">
-                    </a>
+                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
+                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/macbook.jpeg" alt="macbook air m3" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
                     <h3 class="text-[15px] font-normal my-2"><a href="#">macbook air m3</a></h3>
                     <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
                     <p class="text-[14px] font-semibold mb-2">QR 800</p>
                 </div>
-
-                <!-- Product Card 3 -->
-                <div class="min-w-[50%] sm:min-w-[21%] md:w-auto p-3 shadow-lg rounded-xl">
-                    <a href="#">
-                        <img src="./images/ipad-1.jpg" alt="image" class="w-full h-[200px] rounded-lg">
-                    </a>
-                    <h3 class="text-[15px] font-normal my-2">
-                        <a href="#">ipad pro</a>
-                    </h3>
+                
+                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
+                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/ipad-1.jpg" alt="ipad pro" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
+                    <h3 class="text-[15px] font-normal my-2"><a href="#">ipad pro</a></h3>
                     <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
                     <p class="text-[14px] font-semibold mb-2">QR 800</p>
                 </div>
-
-                <!-- Product Card 4 -->
-                <div class="min-w-[50%] sm:min-w-[21%] md:w-auto p-3 shadow-lg rounded-xl">
-                    <a href="#">
-                        <img src="./images/s24.webp" alt="image" class="w-full h-[200px] rounded-lg">
-                    </a>
-                    <h3 class="text-[15px] font-normal my-2">
-                        <a href="#">Galaxy S24 Ultra</a>
-                    </h3>
+                
+                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
+                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/s24.webp" alt="Galaxy S24 Ultra" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
+                    <h3 class="text-[15px] font-normal my-2"><a href="#">Galaxy S24 Ultra</a></h3>
                     <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
                     <p class="text-[14px] font-semibold mb-2">QR 800</p>
                 </div>
-
-                <!-- Product Card 5 -->
-                <div class="min-w-[50%] sm:min-w-[21%] md:w-auto p-3 shadow-lg rounded-xl">
-                    <a href="#">
-                        <img src="./images/macbook.jpeg" alt="macbook air m3" class="w-full h-[200px] rounded-lg">
-                    </a>
+                
+                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
+                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/macbook.jpeg" alt="macbook air m3" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
                     <h3 class="text-[15px] font-normal my-2"><a href="#">macbook air m3</a></h3>
                     <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
                     <p class="text-[14px] font-semibold mb-2">QR 800</p>
                 </div>
-
-                <!-- Product Card 1 -->
-                <div class="min-w-[50%] sm:min-w-[21%] md:w-auto p-3 shadow-lg rounded-xl">
-                    <a href="#">
-                        <img src="./images/iphone.jpeg" alt="iphone 16" class="w-full h-[200px] rounded-lg">
-                    </a>
+                
+                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
+                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/iphone.jpeg" alt="iphone 16" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
                     <h3 class="text-[15px] font-normal my-2"><a href="#">iphone 16</a></h3>
                     <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
                     <p class="text-[14px] font-semibold mb-2">QR 800</p>
                 </div>
                 
-                <!-- Product Card 2 -->
-                <div class="min-w-[50%] sm:min-w-[21%] md:w-auto p-3 shadow-lg rounded-xl">
-                    <a href="#">
-                        <img src="./images/macbook.jpeg" alt="macbook air m3" class="w-full h-[200px] rounded-lg">
-                    </a>
+                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
+                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/ipad-1.jpg" alt="ipad pro" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
+                    <h3 class="text-[15px] font-normal my-2"><a href="#">ipad pro</a></h3>
+                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
+                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
+                </div>
+                
+                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
+                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/s24.webp" alt="Galaxy S24 Ultra" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
+                    <h3 class="text-[15px] font-normal my-2"><a href="#">Galaxy S24 Ultra</a></h3>
+                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
+                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
+                </div>
+                
+                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
+                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/macbook.jpeg" alt="macbook air m3" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
                     <h3 class="text-[15px] font-normal my-2"><a href="#">macbook air m3</a></h3>
                     <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
                     <p class="text-[14px] font-semibold mb-2">QR 800</p>
                 </div>
-
-                <!-- Product Card 3 -->
-                <div class="min-w-[50%] sm:min-w-[21%] md:w-auto p-3 shadow-lg rounded-xl">
-                    <a href="#">
-                        <img src="./images/ipad-1.jpg" alt="image" class="w-full h-[200px] rounded-lg">
-                    </a>
-                    <h3 class="text-[15px] font-normal my-2">
-                        <a href="#">ipad pro</a>
-                    </h3>
+                
+                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
+                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/iphone.jpeg" alt="iphone 16" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
+                    <h3 class="text-[15px] font-normal my-2"><a href="#">iphone 16</a></h3>
                     <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
                     <p class="text-[14px] font-semibold mb-2">QR 800</p>
                 </div>
 
-                <!-- Product Card 4 -->
-                <div class="min-w-[50%] sm:min-w-[21%] md:w-auto p-3 shadow-lg rounded-xl">
-                    <a href="#">
-                        <img src="./images/s24.webp" alt="image" class="w-full h-[200px] rounded-lg">
-                    </a>
-                    <h3 class="text-[15px] font-normal my-2">
-                        <a href="#">Galaxy S24 Ultra</a>
-                    </h3>
-                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
-                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
-                </div>
-
-                <!-- Product Card 5 -->
-                <div class="min-w-[50%] sm:min-w-[21%] md:w-auto p-3 shadow-lg rounded-xl">
-                    <a href="#">
-                        <img src="./images/macbook.jpeg" alt="macbook air m3" class="w-full h-[200px] rounded-lg">
-                    </a>
-                    <h3 class="text-[15px] font-normal my-2"><a href="#">macbook air m3</a></h3>
-                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
-                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
-                </div>
             </div>
 
             <!-- Right Slide Button -->
@@ -463,6 +410,8 @@
         </div>
     </section>
 </section>
+
+
 
 
 
@@ -631,130 +580,95 @@
 
 <section class="py-14">
     <section class="wrapper">
-        <h3 class="mb-5 text-[18px] md:text-[24px] font-semibold text-gray-700">Best Selling</h3>
+        <h3 class="mb-5 text-[18px] md:text-[24px] font-semibold text-gray-700">New Arrival</h3>
         
         <!-- Horizontal scroll wrapper with navigation buttons -->
         <div class="relative flex items-center">
             <!-- Left Slide Button -->
-            <button id="slideLeftone" class="absolute left-0 z-10 bg-gray-200 p-2 rounded-full shadow-lg focus:outline-none">
+            <button id="slideLeft" class="absolute left-0 z-10 bg-gray-200 p-2 rounded-full shadow-lg focus:outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                 </svg>
             </button>
 
             <!-- Scrollable Product Cards -->
-            <div id="sliderone" class="flex gap-5 smooth-scroll overflow-x-auto scrollbar-hide pb-2">
-                <!-- Product Card 1 -->
-                <div class="min-w-[50%] sm:min-w-[21%] md:w-auto p-3 shadow-lg rounded-xl">
-                    <a href="#">
-                        <img src="./images/iphone.jpeg" alt="iphone 16" class="w-full h-[200px] rounded-lg">
-                    </a>
+            <div id="slider" class="flex gap-5 smooth-scroll overflow-x-auto scrollbar-hide pb-2">
+                
+                <!-- Product Cards -->
+                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
+                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/iphone.jpeg" alt="iphone 16" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
                     <h3 class="text-[15px] font-normal my-2"><a href="#">iphone 16</a></h3>
                     <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
                     <p class="text-[14px] font-semibold mb-2">QR 800</p>
                 </div>
                 
-                <!-- Product Card 2 -->
-                <div class="min-w-[50%] sm:min-w-[21%] md:w-auto p-3 shadow-lg rounded-xl">
-                    <a href="#">
-                        <img src="./images/macbook.jpeg" alt="macbook air m3" class="w-full h-[200px] rounded-lg">
-                    </a>
+                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
+                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/macbook.jpeg" alt="macbook air m3" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
                     <h3 class="text-[15px] font-normal my-2"><a href="#">macbook air m3</a></h3>
                     <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
                     <p class="text-[14px] font-semibold mb-2">QR 800</p>
                 </div>
-
-                <!-- Product Card 3 -->
-                <div class="min-w-[50%] sm:min-w-[21%] md:w-auto p-3 shadow-lg rounded-xl">
-                    <a href="#">
-                        <img src="./images/ipad-1.jpg" alt="image" class="w-full h-[200px] rounded-lg">
-                    </a>
-                    <h3 class="text-[15px] font-normal my-2">
-                        <a href="#">ipad pro</a>
-                    </h3>
+                
+                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
+                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/ipad-1.jpg" alt="ipad pro" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
+                    <h3 class="text-[15px] font-normal my-2"><a href="#">ipad pro</a></h3>
                     <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
                     <p class="text-[14px] font-semibold mb-2">QR 800</p>
                 </div>
-
-                <!-- Product Card 4 -->
-                <div class="min-w-[50%] sm:min-w-[21%] md:w-auto p-3 shadow-lg rounded-xl">
-                    <a href="#">
-                        <img src="./images/s24.webp" alt="image" class="w-full h-[200px] rounded-lg">
-                    </a>
-                    <h3 class="text-[15px] font-normal my-2">
-                        <a href="#">Galaxy S24 Ultra</a>
-                    </h3>
+                
+                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
+                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/s24.webp" alt="Galaxy S24 Ultra" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
+                    <h3 class="text-[15px] font-normal my-2"><a href="#">Galaxy S24 Ultra</a></h3>
                     <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
                     <p class="text-[14px] font-semibold mb-2">QR 800</p>
                 </div>
-
-                <!-- Product Card 5 -->
-                <div class="min-w-[50%] sm:min-w-[21%] md:w-auto p-3 shadow-lg rounded-xl">
-                    <a href="#">
-                        <img src="./images/macbook.jpeg" alt="macbook air m3" class="w-full h-[200px] rounded-lg">
-                    </a>
+                
+                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
+                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/macbook.jpeg" alt="macbook air m3" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
                     <h3 class="text-[15px] font-normal my-2"><a href="#">macbook air m3</a></h3>
                     <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
                     <p class="text-[14px] font-semibold mb-2">QR 800</p>
                 </div>
-
-                <!-- Product Card 1 -->
-                <div class="min-w-[50%] sm:min-w-[21%] md:w-auto p-3 shadow-lg rounded-xl">
-                    <a href="#">
-                        <img src="./images/iphone.jpeg" alt="iphone 16" class="w-full h-[200px] rounded-lg">
-                    </a>
+                
+                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
+                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/iphone.jpeg" alt="iphone 16" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
                     <h3 class="text-[15px] font-normal my-2"><a href="#">iphone 16</a></h3>
                     <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
                     <p class="text-[14px] font-semibold mb-2">QR 800</p>
                 </div>
                 
-                <!-- Product Card 2 -->
-                <div class="min-w-[50%] sm:min-w-[21%] md:w-auto p-3 shadow-lg rounded-xl">
-                    <a href="#">
-                        <img src="./images/macbook.jpeg" alt="macbook air m3" class="w-full h-[200px] rounded-lg">
-                    </a>
+                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
+                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/ipad-1.jpg" alt="ipad pro" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
+                    <h3 class="text-[15px] font-normal my-2"><a href="#">ipad pro</a></h3>
+                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
+                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
+                </div>
+                
+                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
+                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/s24.webp" alt="Galaxy S24 Ultra" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
+                    <h3 class="text-[15px] font-normal my-2"><a href="#">Galaxy S24 Ultra</a></h3>
+                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
+                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
+                </div>
+                
+                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
+                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/macbook.jpeg" alt="macbook air m3" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
                     <h3 class="text-[15px] font-normal my-2"><a href="#">macbook air m3</a></h3>
                     <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
                     <p class="text-[14px] font-semibold mb-2">QR 800</p>
                 </div>
-
-                <!-- Product Card 3 -->
-                <div class="min-w-[50%] sm:min-w-[21%] md:w-auto p-3 shadow-lg rounded-xl">
-                    <a href="#">
-                        <img src="./images/ipad-1.jpg" alt="image" class="w-full h-[200px] rounded-lg">
-                    </a>
-                    <h3 class="text-[15px] font-normal my-2">
-                        <a href="#">ipad pro</a>
-                    </h3>
+                
+                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
+                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/iphone.jpeg" alt="iphone 16" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
+                    <h3 class="text-[15px] font-normal my-2"><a href="#">iphone 16</a></h3>
                     <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
                     <p class="text-[14px] font-semibold mb-2">QR 800</p>
                 </div>
 
-                <!-- Product Card 4 -->
-                <div class="min-w-[50%] sm:min-w-[21%] md:w-auto p-3 shadow-lg rounded-xl">
-                    <a href="#">
-                        <img src="./images/s24.webp" alt="image" class="w-full h-[200px] rounded-lg">
-                    </a>
-                    <h3 class="text-[15px] font-normal my-2">
-                        <a href="#">Galaxy S24 Ultra</a>
-                    </h3>
-                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
-                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
-                </div>
-
-                <!-- Product Card 5 -->
-                <div class="min-w-[50%] sm:min-w-[21%] md:w-auto p-3 shadow-lg rounded-xl">
-                    <a href="#">
-                        <img src="./images/macbook.jpeg" alt="macbook air m3" class="w-full h-[200px] rounded-lg">
-                    </a>
-                    <h3 class="text-[15px] font-normal my-2"><a href="#">macbook air m3</a></h3>
-                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
-                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
-                </div>
             </div>
 
             <!-- Right Slide Button -->
-            <button id="slideRightone" class="absolute right-0 z-10 bg-gray-200 p-2 rounded-full shadow-lg focus:outline-none">
+            <button id="slideRight" class="absolute right-0 z-10 bg-gray-200 p-2 rounded-full shadow-lg focus:outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
