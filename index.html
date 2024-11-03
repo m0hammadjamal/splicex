@@ -49,11 +49,11 @@
         </form>
         <div class="">
             <ul class="flex justify-end items-center">                
-                <li class="mr-7 hidden md:block">                   
-                    <p class="text-[16px] font-semibold flex items-center hover:text-purple-500">
-                        <i class='font-bold mr-[5px] bx bx-heart'></i>
-                        <a href="#">Wishlist</a>
-                    </p>
+                <li class="mr-1 md:mr-7">                   
+                    <a href="whishlist.html" class="text-[16px] font-semibold flex items-center hover:text-purple-500">
+                        <i class='text-[35px] md:text-[16px] md:font-bold mr-[5px] bx bx-heart'></i>
+                        <p class="hidden md:block">Wishlist</p>
+                    </a>
                 </li>
                 <li class="mr-7 px-3 border-l border-r">
                     <a href="cart.html" class="relative hover:text-purple-500">
@@ -81,11 +81,11 @@
                     <p class="text-[16px] py-2 hover:text-purple-500 border-b">
                         <a href="#">Manage Whishlist</a>
                     </p>
-                    <p class="text-[16px] py-2 hover:text-purple-500 border-b">
+                    <!-- <p class="text-[16px] py-2 hover:text-purple-500 border-b">
                         <a href="#">Logout</a>
-                    </p>
+                    </p> -->
                     <p class="text-[16px] pt-2 hover:text-purple-500">
-                        <a href="#">Login</a>
+                        <a href="login.html">Login</a>
                     </p>
                 </div>
 
@@ -109,7 +109,7 @@
                             <a href="#" class="text-[16px] font-semibold  hover:text-purple-500">All Categories</a>
                         </p>
                         <p class="pb-3 mb-3 border-b border-gray-300">
-                            <a href="#" class="text-[16px] font-semibold hover:text-purple-500">Cart</a>
+                            <a href="cart.html" class="text-[16px] font-semibold hover:text-purple-500">Cart</a>
                         </p>
                         <p class="pb-3 mb-3 border-b border-gray-300">
                             <a href="3" class="text-[16px] font-semibold hover:text-purple-500">View Orders</a>
@@ -120,11 +120,11 @@
                         <p class="pb-3 mb-3 border-b border-gray-300">
                             <a href="#" class="text-[16px] font-semibold hover:text-purple-500">Manage Whishlist</a>
                         </p>
-                        <p class="pb-3 mb-3 border-b border-gray-300">
+                        <!-- <p class="pb-3 mb-3 border-b border-gray-300">
                             <a href="#" class="text-[16px] font-semibold hover:text-purple-500">Logout</a>
-                        </p>
+                        </p> -->
                         <p class="pb-3 mb-3 border-b border-gray-300">
-                            <a href="#" class="text-[16px] font-semibold hover:text-purple-500">Login</a>
+                            <a href="login.html" class="text-[16px] font-semibold hover:text-purple-500">Login</a>
                         </p>
                     </div>
 
@@ -187,14 +187,14 @@
 <section class="bg-gray-100 py-2 md:py-5">
     <div class="relative flex items-center wrapper">
         <!-- Left Slide Button -->
-        <button id="slideLefttwo" class="absolute left-0 z-10 bg-gray-200 p-2 rounded-full shadow-lg focus:outline-none">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <button id="slideLeftthree" class="absolute left-0 z-10 bg-gray-200 p-[2px] sm:p-1 md:p-2 rounded-full shadow-lg focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 lg:h-6 w-2 md:w-4 lg:w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
             </svg>
         </button>
 
         <!-- Scrollable Product Cards -->
-        <div id="slidertwo" class="flex justify-between w-full smooth-scroll overflow-x-auto scrollbar-hide">
+        <div id="sliderthree" class="flex justify-between w-full smooth-scroll overflow-x-auto scrollbar-hide">
 
             <!-- Category Card -->
             <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-2 sm:p-2 md:p-3 lg:p-4 flex flex-col items-center min-w-[50px] sm:min-w-[65px] md:min-w-[90px] lg:min-w-[125px] max-w-[50px] sm:max-w-[65px] md:max-w-[90px] lg:max-w-[125px] mr-[20px]">
@@ -288,6 +288,38 @@
                 </a>
             </div>
 
+
+            <!-- Category Card -->
+            <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-2 sm:p-2 md:p-3 lg:p-4 flex flex-col items-center  min-w-[50px] sm:min-w-[65px] md:min-w-[90px] lg:min-w-[125px] max-w-[50px] sm:max-w-[65px] md:max-w-[90px] lg:max-w-[125px] mr-[20px]">
+                <a href="#" class="flex flex-col items-center">
+                    <div class="rounded-full p-[3px] sm:p-[10px] md:p-[10px] lg:p-[16px] mb-[6px] md:mb-2 lg:mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
+                        <img src="./images/watch.png" alt="watch" class="w-[20px] sm:w-[25px] md:w-[30px] lg:w-[40px] h-[20px] sm:h-[25px] md:h-[30px] lg:h-[40px]">
+                    </div>
+                    <p class="text-[6px] leading-[8px] md:text-xs lg:text-sm  font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
+                </a>
+            </div>
+
+
+            <!-- Category Card -->
+            <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-2 sm:p-2 md:p-3 lg:p-4 flex flex-col items-center  min-w-[50px] sm:min-w-[65px] md:min-w-[90px] lg:min-w-[125px] max-w-[50px] sm:max-w-[65px] md:max-w-[90px] lg:max-w-[125px] mr-[20px]">
+                <a href="#" class="flex flex-col items-center">
+                    <div class="rounded-full p-[3px] sm:p-[10px] md:p-[10px] lg:p-[16px] mb-[6px] md:mb-2 lg:mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
+                        <img src="./images/watch.png" alt="watch" class="w-[20px] sm:w-[25px] md:w-[30px] lg:w-[40px] h-[20px] sm:h-[25px] md:h-[30px] lg:h-[40px]">
+                    </div>
+                    <p class="text-[6px] leading-[8px] md:text-xs lg:text-sm  font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
+                </a>
+            </div>
+
+
+            <!-- Category Card -->
+            <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-2 sm:p-2 md:p-3 lg:p-4 flex flex-col items-center  min-w-[50px] sm:min-w-[65px] md:min-w-[90px] lg:min-w-[125px] max-w-[50px] sm:max-w-[65px] md:max-w-[90px] lg:max-w-[125px] mr-[20px]">
+                <a href="#" class="flex flex-col items-center">
+                    <div class="rounded-full p-[3px] sm:p-[10px] md:p-[10px] lg:p-[16px] mb-[6px] md:mb-2 lg:mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
+                        <img src="./images/watch.png" alt="watch" class="w-[20px] sm:w-[25px] md:w-[30px] lg:w-[40px] h-[20px] sm:h-[25px] md:h-[30px] lg:h-[40px]">
+                    </div>
+                    <p class="text-[6px] leading-[8px] md:text-xs lg:text-sm  font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
+                </a>
+            </div>
             
 
         
@@ -297,13 +329,41 @@
         </div>
 
         <!-- Right Slide Button -->
-        <button id="slideRighttwo" class="absolute right-0 z-10 bg-gray-200 p-2 rounded-full shadow-lg focus:outline-none">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <button id="slideRightthree" class="absolute right-0 z-10 bg-gray-200 p-[2px] sm:p-1 md:p-2 rounded-full shadow-lg focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 lg:h-6 w-2 md:w-4 lg:w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
         </button>
     </div>
 </section>
+
+
+
+<script>
+    const sliderthree = document.getElementById('sliderthree');
+    const slideLeftthree = document.getElementById('slideLeftthree');
+    const slideRightthree = document.getElementById('slideRightthree');
+
+    slideLeftthree.addEventListener('click', () => {
+        console.log('Left button clicked');
+        sliderthree.scrollBy({ left: -200, behavior: 'smooth' });
+    });
+
+    slideRightthree.addEventListener('click', () => {
+        console.log('Right button clicked');
+        sliderthree.scrollBy({ left: 200, behavior: 'smooth' });
+    });
+
+    function checkOverflow() {
+        const isOverflowing = sliderthree.scrollWidth > sliderthree.clientWidth;
+        console.log('Overflow:', isOverflowing);
+        slideLeftthree.style.display = isOverflowing ? 'block' : 'none';
+        slideRightthree.style.display = isOverflowing ? 'block' : 'none';
+    }
+
+    window.addEventListener('load', checkOverflow);
+    window.addEventListener('resize', checkOverflow);
+</script>
 
 
 
@@ -316,11 +376,10 @@
     <section class="wrapper">
         <h3 class="mb-5 text-[18px] md:text-[24px] font-semibold text-gray-700">New Arrival</h3>
         
-        <!-- Horizontal scroll wrapper with navigation buttons -->
         <div class="relative flex items-center">
             <!-- Left Slide Button -->
-            <button id="slideLeft" class="absolute left-0 z-10 bg-gray-200 p-2 rounded-full shadow-lg focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <button id="slideLeft" class="absolute left-[-10px] z-10 bg-gray-200 p-1 md:p-2 rounded-full shadow-lg focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 md:h-6 w-4 md:w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                 </svg>
             </button>
@@ -329,81 +388,111 @@
             <div id="slider" class="flex gap-5 smooth-scroll overflow-x-auto scrollbar-hide pb-2">
                 
                 <!-- Product Cards -->
-                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
-                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/iphone.jpeg" alt="iphone 16" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
-                    <h3 class="text-[15px] font-normal my-2"><a href="#">iphone 16</a></h3>
-                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
-                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
+                <!-- Product 1 -->
+                <div class="min-w-[100px] md:min-w-[150px] max-w-[100px] md:max-w-[150px] min-h-[200px] md:min-h-[260px] max-h-[200px] md:max-h-[260px] p-3 shadow-lg rounded-xl transition duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <a href="#" class="block">
+                        <img src="./images/iphone.jpeg" alt="iphone 16" class="w-full min-h-[100px] max-h-[100px] md:min-h-[150px] md:max-h-[150px] rounded-lg object-cover">
+                    </a>
+                    <h3 class="text-[10px] sm:text-[13px] md:text-[15px] font-normal my-2"><a href="#" class="text-gray-800 hover:text-purple-500 transition">iphone 16</a></h3>
+                    <p class="text-[6px] sm:text-[8px] md:text-[10px] line-through text-gray-500 font-semibold mb-1">QR 850</p>
+                    <p class="text-[10px] sm:text-[12px] md:text-[14px] font-semibold text-gray-700">QR 800</p>
                 </div>
-                
-                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
-                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/macbook.jpeg" alt="macbook air m3" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
-                    <h3 class="text-[15px] font-normal my-2"><a href="#">macbook air m3</a></h3>
-                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
-                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
+
+                <!-- Product 2 -->
+                <div class="min-w-[100px] md:min-w-[150px] max-w-[100px] md:max-w-[150px] min-h-[200px] md:min-h-[260px] max-h-[200px] md:max-h-[260px] p-3 shadow-lg rounded-xl transition duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <a href="#" class="block">
+                        <img src="./images/macbook.jpeg" alt="macbook air m3" class="w-full min-h-[100px] max-h-[100px] md:min-h-[150px] md:max-h-[150px] rounded-lg object-cover">
+                    </a>
+                    <h3 class="text-[10px] sm:text-[13px] md:text-[15px] font-normal my-2"><a href="#" class="text-gray-800 hover:text-purple-500 transition">macbook air m3</a></h3>
+                    <p class="text-[6px] sm:text-[8px] md:text-[10px] line-through text-gray-500 font-semibold mb-1">QR 850</p>
+                    <p class="text-[10px] sm:text-[12px] md:text-[14px] font-semibold text-gray-700">QR 800</p>
                 </div>
-                
-                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
-                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/ipad-1.jpg" alt="ipad pro" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
-                    <h3 class="text-[15px] font-normal my-2"><a href="#">ipad pro</a></h3>
-                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
-                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
+
+                <!-- Product 3 -->
+                <div class="min-w-[100px] md:min-w-[150px] max-w-[100px] md:max-w-[150px] min-h-[200px] md:min-h-[260px] max-h-[200px] md:max-h-[260px] p-3 shadow-lg rounded-xl transition duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <a href="#" class="block">
+                        <img src="./images/ipad-1.jpg" alt="ipad pro" class="w-full min-h-[100px] max-h-[100px] md:min-h-[150px] md:max-h-[150px] rounded-lg object-cover">
+                    </a>
+                    <h3 class="text-[10px] sm:text-[13px] md:text-[15px] font-normal my-2"><a href="#" class="text-gray-800 hover:text-purple-500 transition">ipad pro</a></h3>
+                    <p class="text-[6px] sm:text-[8px] md:text-[10px] line-through text-gray-500 font-semibold mb-1">QR 850</p>
+                    <p class="text-[10px] sm:text-[12px] md:text-[14px] font-semibold text-gray-700">QR 800</p>
                 </div>
-                
-                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
-                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/s24.webp" alt="Galaxy S24 Ultra" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
-                    <h3 class="text-[15px] font-normal my-2"><a href="#">Galaxy S24 Ultra</a></h3>
-                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
-                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
+
+                <!-- Product 4 -->
+                <div class="min-w-[100px] md:min-w-[150px] max-w-[100px] md:max-w-[150px] min-h-[200px] md:min-h-[260px] max-h-[200px] md:max-h-[260px] p-3 shadow-lg rounded-xl transition duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <a href="#" class="block">
+                        <img src="./images/s24.webp" alt="Galaxy S24 Ultra" class="w-full min-h-[100px] max-h-[100px] md:min-h-[150px] md:max-h-[150px] rounded-lg object-cover">
+                    </a>
+                    <h3 class="text-[10px] sm:text-[13px] md:text-[15px] font-normal my-2"><a href="#" class="text-gray-800 hover:text-purple-500 transition">Galaxy S24 Ultra</a></h3>
+                    <p class="text-[6px] sm:text-[8px] md:text-[10px] line-through text-gray-500 font-semibold mb-1">QR 850</p>
+                    <p class="text-[10px] sm:text-[12px] md:text-[14px] font-semibold text-gray-700">QR 800</p>
                 </div>
-                
-                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
-                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/macbook.jpeg" alt="macbook air m3" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
-                    <h3 class="text-[15px] font-normal my-2"><a href="#">macbook air m3</a></h3>
-                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
-                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
+
+                <!-- Product 5 -->
+                <div class="min-w-[100px] md:min-w-[150px] max-w-[100px] md:max-w-[150px] min-h-[200px] md:min-h-[260px] max-h-[200px] md:max-h-[260px] p-3 shadow-lg rounded-xl transition duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <a href="#" class="block">
+                        <img src="./images/macbook.jpeg" alt="macbook air m3" class="w-full min-h-[100px] max-h-[100px] md:min-h-[150px] md:max-h-[150px] rounded-lg object-cover">
+                    </a>
+                    <h3 class="text-[10px] sm:text-[13px] md:text-[15px] font-normal my-2"><a href="#" class="text-gray-800 hover:text-purple-500 transition">macbook air m3</a></h3>
+                    <p class="text-[6px] sm:text-[8px] md:text-[10px] line-through text-gray-500 font-semibold mb-1">QR 850</p>
+                    <p class="text-[10px] sm:text-[12px] md:text-[14px] font-semibold text-gray-700">QR 800</p>
                 </div>
-                
-                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
-                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/iphone.jpeg" alt="iphone 16" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
-                    <h3 class="text-[15px] font-normal my-2"><a href="#">iphone 16</a></h3>
-                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
-                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
+
+                <!-- Product 6 -->
+                <div class="min-w-[100px] md:min-w-[150px] max-w-[100px] md:max-w-[150px] min-h-[200px] md:min-h-[260px] max-h-[200px] md:max-h-[260px] p-3 shadow-lg rounded-xl transition duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <a href="#" class="block">
+                        <img src="./images/iphone.jpeg" alt="iphone 16" class="w-full min-h-[100px] max-h-[100px] md:min-h-[150px] md:max-h-[150px] rounded-lg object-cover">
+                    </a>
+                    <h3 class="text-[10px] sm:text-[13px] md:text-[15px] font-normal my-2"><a href="#" class="text-gray-800 hover:text-purple-500 transition">iphone 16</a></h3>
+                    <p class="text-[6px] sm:text-[8px] md:text-[10px] line-through text-gray-500 font-semibold mb-1">QR 850</p>
+                    <p class="text-[10px] sm:text-[12px] md:text-[14px] font-semibold text-gray-700">QR 800</p>
                 </div>
-                
-                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
-                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/ipad-1.jpg" alt="ipad pro" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
-                    <h3 class="text-[15px] font-normal my-2"><a href="#">ipad pro</a></h3>
-                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
-                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
+
+                <!-- Product 7 -->
+                <div class="min-w-[100px] md:min-w-[150px] max-w-[100px] md:max-w-[150px] min-h-[200px] md:min-h-[260px] max-h-[200px] md:max-h-[260px] p-3 shadow-lg rounded-xl transition duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <a href="#" class="block">
+                        <img src="./images/ipad-1.jpg" alt="ipad pro" class="w-full min-h-[100px] max-h-[100px] md:min-h-[150px] md:max-h-[150px] rounded-lg object-cover">
+                    </a>
+                    <h3 class="text-[10px] sm:text-[13px] md:text-[15px] font-normal my-2"><a href="#" class="text-gray-800 hover:text-purple-500 transition">ipad pro</a></h3>
+                    <p class="text-[6px] sm:text-[8px] md:text-[10px] line-through text-gray-500 font-semibold mb-1">QR 850</p>
+                    <p class="text-[10px] sm:text-[12px] md:text-[14px] font-semibold text-gray-700">QR 800</p>
                 </div>
-                
-                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
-                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/s24.webp" alt="Galaxy S24 Ultra" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
-                    <h3 class="text-[15px] font-normal my-2"><a href="#">Galaxy S24 Ultra</a></h3>
-                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
-                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
+
+                <!-- Product 8 -->
+                <div class="min-w-[100px] md:min-w-[150px] max-w-[100px] md:max-w-[150px] min-h-[200px] md:min-h-[260px] max-h-[200px] md:max-h-[260px] p-3 shadow-lg rounded-xl transition duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <a href="#" class="block">
+                        <img src="./images/s24.webp" alt="Galaxy S24 Ultra" class="w-full min-h-[100px] max-h-[100px] md:min-h-[150px] md:max-h-[150px] rounded-lg object-cover">
+                    </a>
+                    <h3 class="text-[10px] sm:text-[13px] md:text-[15px] font-normal my-2"><a href="#" class="text-gray-800 hover:text-purple-500 transition">Galaxy S24 Ultra</a></h3>
+                    <p class="text-[6px] sm:text-[8px] md:text-[10px] line-through text-gray-500 font-semibold mb-1">QR 850</p>
+                    <p class="text-[10px] sm:text-[12px] md:text-[14px] font-semibold text-gray-700">QR 800</p>
                 </div>
-                
-                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
-                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/macbook.jpeg" alt="macbook air m3" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
-                    <h3 class="text-[15px] font-normal my-2"><a href="#">macbook air m3</a></h3>
-                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
-                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
+
+                <!-- Product 9 -->
+                <div class="min-w-[100px] md:min-w-[150px] max-w-[100px] md:max-w-[150px] min-h-[200px] md:min-h-[260px] max-h-[200px] md:max-h-[260px] p-3 shadow-lg rounded-xl transition duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <a href="#" class="block">
+                        <img src="./images/macbook.jpeg" alt="macbook air m3" class="w-full min-h-[100px] max-h-[100px] md:min-h-[150px] md:max-h-[150px] rounded-lg object-cover">
+                    </a>
+                    <h3 class="text-[10px] sm:text-[13px] md:text-[15px] font-normal my-2"><a href="#" class="text-gray-800 hover:text-purple-500 transition">macbook air m3</a></h3>
+                    <p class="text-[6px] sm:text-[8px] md:text-[10px] line-through text-gray-500 font-semibold mb-1">QR 850</p>
+                    <p class="text-[10px] sm:text-[12px] md:text-[14px] font-semibold text-gray-700">QR 800</p>
                 </div>
-                
-                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
-                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/iphone.jpeg" alt="iphone 16" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
-                    <h3 class="text-[15px] font-normal my-2"><a href="#">iphone 16</a></h3>
-                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
-                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
+
+                <!-- Product 10 -->
+                <div class="min-w-[100px] md:min-w-[150px] max-w-[100px] md:max-w-[150px] min-h-[200px] md:min-h-[260px] max-h-[200px] md:max-h-[260px] p-3 shadow-lg rounded-xl transition duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <a href="#" class="block">
+                        <img src="./images/iphone.jpeg" alt="iphone 16" class="w-full min-h-[100px] max-h-[100px] md:min-h-[150px] md:max-h-[150px] rounded-lg object-cover">
+                    </a>
+                    <h3 class="text-[10px] sm:text-[13px] md:text-[15px] font-normal my-2"><a href="#" class="text-gray-800 hover:text-purple-500 transition">iphone 16</a></h3>
+                    <p class="text-[6px] sm:text-[8px] md:text-[10px] line-through text-gray-500 font-semibold mb-1">QR 850</p>
+                    <p class="text-[10px] sm:text-[12px] md:text-[14px] font-semibold text-gray-700">QR 800</p>
                 </div>
 
             </div>
 
             <!-- Right Slide Button -->
-            <button id="slideRight" class="absolute right-0 z-10 bg-gray-200 p-2 rounded-full shadow-lg focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <button id="slideRight" class="absolute right-[-10px] z-10 bg-gray-200 p-1 md:p-2 rounded-full shadow-lg focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 md:h-6 w-4 md:w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
             </button>
@@ -416,9 +505,10 @@
 
 
 
+
 <!-- offer images -->
 
-<section class="py-10">
+<section class="py-5 md:py-10">
     <div class="wrapper mx-auto px-2 md:px-3">
         <div class="flex flex-row gap-4">
             
@@ -455,7 +545,7 @@
 
 
 
-<section class="pb-10">
+<section class="">
     <section class="wrapper">
         <h3 class="mb-5 text-[18px] md:text-[24px] font-semibold text-gray-700">Top Brands</h3>
         <div class="overflow-hidden">
@@ -577,16 +667,14 @@
 <!-- best sellers -->
 
 
-
 <section class="py-14">
     <section class="wrapper">
-        <h3 class="mb-5 text-[18px] md:text-[24px] font-semibold text-gray-700">New Arrival</h3>
+        <h3 class="mb-5 text-[18px] md:text-[24px] font-semibold text-gray-700">Best Selling</h3>
         
-        <!-- Horizontal scroll wrapper with navigation buttons -->
         <div class="relative flex items-center">
             <!-- Left Slide Button -->
-            <button id="slideLeft" class="absolute left-0 z-10 bg-gray-200 p-2 rounded-full shadow-lg focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <button id="slideLeft" class="absolute left-[-10px] z-10 bg-gray-200 p-1 md:p-2 rounded-full shadow-lg focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 md:h-6 w-4 md:w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                 </svg>
             </button>
@@ -595,81 +683,111 @@
             <div id="slider" class="flex gap-5 smooth-scroll overflow-x-auto scrollbar-hide pb-2">
                 
                 <!-- Product Cards -->
-                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
-                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/iphone.jpeg" alt="iphone 16" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
-                    <h3 class="text-[15px] font-normal my-2"><a href="#">iphone 16</a></h3>
-                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
-                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
+                <!-- Product 1 -->
+                <div class="min-w-[100px] md:min-w-[150px] max-w-[100px] md:max-w-[150px] min-h-[200px] md:min-h-[260px] max-h-[200px] md:max-h-[260px] p-3 shadow-lg rounded-xl transition duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <a href="#" class="block">
+                        <img src="./images/iphone.jpeg" alt="iphone 16" class="w-full min-h-[100px] max-h-[100px] md:min-h-[150px] md:max-h-[150px] rounded-lg object-cover">
+                    </a>
+                    <h3 class="text-[10px] sm:text-[13px] md:text-[15px] font-normal my-2"><a href="#" class="text-gray-800 hover:text-purple-500 transition">iphone 16</a></h3>
+                    <p class="text-[6px] sm:text-[8px] md:text-[10px] line-through text-gray-500 font-semibold mb-1">QR 850</p>
+                    <p class="text-[10px] sm:text-[12px] md:text-[14px] font-semibold text-gray-700">QR 800</p>
                 </div>
-                
-                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
-                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/macbook.jpeg" alt="macbook air m3" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
-                    <h3 class="text-[15px] font-normal my-2"><a href="#">macbook air m3</a></h3>
-                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
-                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
+
+                <!-- Product 2 -->
+                <div class="min-w-[100px] md:min-w-[150px] max-w-[100px] md:max-w-[150px] min-h-[200px] md:min-h-[260px] max-h-[200px] md:max-h-[260px] p-3 shadow-lg rounded-xl transition duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <a href="#" class="block">
+                        <img src="./images/macbook.jpeg" alt="macbook air m3" class="w-full min-h-[100px] max-h-[100px] md:min-h-[150px] md:max-h-[150px] rounded-lg object-cover">
+                    </a>
+                    <h3 class="text-[10px] sm:text-[13px] md:text-[15px] font-normal my-2"><a href="#" class="text-gray-800 hover:text-purple-500 transition">macbook air m3</a></h3>
+                    <p class="text-[6px] sm:text-[8px] md:text-[10px] line-through text-gray-500 font-semibold mb-1">QR 850</p>
+                    <p class="text-[10px] sm:text-[12px] md:text-[14px] font-semibold text-gray-700">QR 800</p>
                 </div>
-                
-                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
-                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/ipad-1.jpg" alt="ipad pro" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
-                    <h3 class="text-[15px] font-normal my-2"><a href="#">ipad pro</a></h3>
-                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
-                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
+
+                <!-- Product 3 -->
+                <div class="min-w-[100px] md:min-w-[150px] max-w-[100px] md:max-w-[150px] min-h-[200px] md:min-h-[260px] max-h-[200px] md:max-h-[260px] p-3 shadow-lg rounded-xl transition duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <a href="#" class="block">
+                        <img src="./images/ipad-1.jpg" alt="ipad pro" class="w-full min-h-[100px] max-h-[100px] md:min-h-[150px] md:max-h-[150px] rounded-lg object-cover">
+                    </a>
+                    <h3 class="text-[10px] sm:text-[13px] md:text-[15px] font-normal my-2"><a href="#" class="text-gray-800 hover:text-purple-500 transition">ipad pro</a></h3>
+                    <p class="text-[6px] sm:text-[8px] md:text-[10px] line-through text-gray-500 font-semibold mb-1">QR 850</p>
+                    <p class="text-[10px] sm:text-[12px] md:text-[14px] font-semibold text-gray-700">QR 800</p>
                 </div>
-                
-                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
-                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/s24.webp" alt="Galaxy S24 Ultra" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
-                    <h3 class="text-[15px] font-normal my-2"><a href="#">Galaxy S24 Ultra</a></h3>
-                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
-                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
+
+                <!-- Product 4 -->
+                <div class="min-w-[100px] md:min-w-[150px] max-w-[100px] md:max-w-[150px] min-h-[200px] md:min-h-[260px] max-h-[200px] md:max-h-[260px] p-3 shadow-lg rounded-xl transition duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <a href="#" class="block">
+                        <img src="./images/s24.webp" alt="Galaxy S24 Ultra" class="w-full min-h-[100px] max-h-[100px] md:min-h-[150px] md:max-h-[150px] rounded-lg object-cover">
+                    </a>
+                    <h3 class="text-[10px] sm:text-[13px] md:text-[15px] font-normal my-2"><a href="#" class="text-gray-800 hover:text-purple-500 transition">Galaxy S24 Ultra</a></h3>
+                    <p class="text-[6px] sm:text-[8px] md:text-[10px] line-through text-gray-500 font-semibold mb-1">QR 850</p>
+                    <p class="text-[10px] sm:text-[12px] md:text-[14px] font-semibold text-gray-700">QR 800</p>
                 </div>
-                
-                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
-                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/macbook.jpeg" alt="macbook air m3" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
-                    <h3 class="text-[15px] font-normal my-2"><a href="#">macbook air m3</a></h3>
-                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
-                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
+
+                <!-- Product 5 -->
+                <div class="min-w-[100px] md:min-w-[150px] max-w-[100px] md:max-w-[150px] min-h-[200px] md:min-h-[260px] max-h-[200px] md:max-h-[260px] p-3 shadow-lg rounded-xl transition duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <a href="#" class="block">
+                        <img src="./images/macbook.jpeg" alt="macbook air m3" class="w-full min-h-[100px] max-h-[100px] md:min-h-[150px] md:max-h-[150px] rounded-lg object-cover">
+                    </a>
+                    <h3 class="text-[10px] sm:text-[13px] md:text-[15px] font-normal my-2"><a href="#" class="text-gray-800 hover:text-purple-500 transition">macbook air m3</a></h3>
+                    <p class="text-[6px] sm:text-[8px] md:text-[10px] line-through text-gray-500 font-semibold mb-1">QR 850</p>
+                    <p class="text-[10px] sm:text-[12px] md:text-[14px] font-semibold text-gray-700">QR 800</p>
                 </div>
-                
-                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
-                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/iphone.jpeg" alt="iphone 16" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
-                    <h3 class="text-[15px] font-normal my-2"><a href="#">iphone 16</a></h3>
-                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
-                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
+
+                <!-- Product 6 -->
+                <div class="min-w-[100px] md:min-w-[150px] max-w-[100px] md:max-w-[150px] min-h-[200px] md:min-h-[260px] max-h-[200px] md:max-h-[260px] p-3 shadow-lg rounded-xl transition duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <a href="#" class="block">
+                        <img src="./images/iphone.jpeg" alt="iphone 16" class="w-full min-h-[100px] max-h-[100px] md:min-h-[150px] md:max-h-[150px] rounded-lg object-cover">
+                    </a>
+                    <h3 class="text-[10px] sm:text-[13px] md:text-[15px] font-normal my-2"><a href="#" class="text-gray-800 hover:text-purple-500 transition">iphone 16</a></h3>
+                    <p class="text-[6px] sm:text-[8px] md:text-[10px] line-through text-gray-500 font-semibold mb-1">QR 850</p>
+                    <p class="text-[10px] sm:text-[12px] md:text-[14px] font-semibold text-gray-700">QR 800</p>
                 </div>
-                
-                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
-                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/ipad-1.jpg" alt="ipad pro" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
-                    <h3 class="text-[15px] font-normal my-2"><a href="#">ipad pro</a></h3>
-                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
-                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
+
+                <!-- Product 7 -->
+                <div class="min-w-[100px] md:min-w-[150px] max-w-[100px] md:max-w-[150px] min-h-[200px] md:min-h-[260px] max-h-[200px] md:max-h-[260px] p-3 shadow-lg rounded-xl transition duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <a href="#" class="block">
+                        <img src="./images/ipad-1.jpg" alt="ipad pro" class="w-full min-h-[100px] max-h-[100px] md:min-h-[150px] md:max-h-[150px] rounded-lg object-cover">
+                    </a>
+                    <h3 class="text-[10px] sm:text-[13px] md:text-[15px] font-normal my-2"><a href="#" class="text-gray-800 hover:text-purple-500 transition">ipad pro</a></h3>
+                    <p class="text-[6px] sm:text-[8px] md:text-[10px] line-through text-gray-500 font-semibold mb-1">QR 850</p>
+                    <p class="text-[10px] sm:text-[12px] md:text-[14px] font-semibold text-gray-700">QR 800</p>
                 </div>
-                
-                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
-                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/s24.webp" alt="Galaxy S24 Ultra" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
-                    <h3 class="text-[15px] font-normal my-2"><a href="#">Galaxy S24 Ultra</a></h3>
-                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
-                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
+
+                <!-- Product 8 -->
+                <div class="min-w-[100px] md:min-w-[150px] max-w-[100px] md:max-w-[150px] min-h-[200px] md:min-h-[260px] max-h-[200px] md:max-h-[260px] p-3 shadow-lg rounded-xl transition duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <a href="#" class="block">
+                        <img src="./images/s24.webp" alt="Galaxy S24 Ultra" class="w-full min-h-[100px] max-h-[100px] md:min-h-[150px] md:max-h-[150px] rounded-lg object-cover">
+                    </a>
+                    <h3 class="text-[10px] sm:text-[13px] md:text-[15px] font-normal my-2"><a href="#" class="text-gray-800 hover:text-purple-500 transition">Galaxy S24 Ultra</a></h3>
+                    <p class="text-[6px] sm:text-[8px] md:text-[10px] line-through text-gray-500 font-semibold mb-1">QR 850</p>
+                    <p class="text-[10px] sm:text-[12px] md:text-[14px] font-semibold text-gray-700">QR 800</p>
                 </div>
-                
-                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
-                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/macbook.jpeg" alt="macbook air m3" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
-                    <h3 class="text-[15px] font-normal my-2"><a href="#">macbook air m3</a></h3>
-                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
-                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
+
+                <!-- Product 9 -->
+                <div class="min-w-[100px] md:min-w-[150px] max-w-[100px] md:max-w-[150px] min-h-[200px] md:min-h-[260px] max-h-[200px] md:max-h-[260px] p-3 shadow-lg rounded-xl transition duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <a href="#" class="block">
+                        <img src="./images/macbook.jpeg" alt="macbook air m3" class="w-full min-h-[100px] max-h-[100px] md:min-h-[150px] md:max-h-[150px] rounded-lg object-cover">
+                    </a>
+                    <h3 class="text-[10px] sm:text-[13px] md:text-[15px] font-normal my-2"><a href="#" class="text-gray-800 hover:text-purple-500 transition">macbook air m3</a></h3>
+                    <p class="text-[6px] sm:text-[8px] md:text-[10px] line-through text-gray-500 font-semibold mb-1">QR 850</p>
+                    <p class="text-[10px] sm:text-[12px] md:text-[14px] font-semibold text-gray-700">QR 800</p>
                 </div>
-                
-                <div class="min-w-[150px] max-w-[150px] min-h-[280px] max-h-[280px] p-3 shadow-lg rounded-xl">
-                    <a href="#" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px]"><img src="./images/iphone.jpeg" alt="iphone 16" class="min-w-[126px] max-w-[126px] min-h-[126px] max-h-[126px] rounded-lg object-cover"></a>
-                    <h3 class="text-[15px] font-normal my-2"><a href="#">iphone 16</a></h3>
-                    <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">QR 850</p>
-                    <p class="text-[14px] font-semibold mb-2">QR 800</p>
+
+                <!-- Product 10 -->
+                <div class="min-w-[100px] md:min-w-[150px] max-w-[100px] md:max-w-[150px] min-h-[200px] md:min-h-[260px] max-h-[200px] md:max-h-[260px] p-3 shadow-lg rounded-xl transition duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <a href="#" class="block">
+                        <img src="./images/iphone.jpeg" alt="iphone 16" class="w-full min-h-[100px] max-h-[100px] md:min-h-[150px] md:max-h-[150px] rounded-lg object-cover">
+                    </a>
+                    <h3 class="text-[10px] sm:text-[13px] md:text-[15px] font-normal my-2"><a href="#" class="text-gray-800 hover:text-purple-500 transition">iphone 16</a></h3>
+                    <p class="text-[6px] sm:text-[8px] md:text-[10px] line-through text-gray-500 font-semibold mb-1">QR 850</p>
+                    <p class="text-[10px] sm:text-[12px] md:text-[14px] font-semibold text-gray-700">QR 800</p>
                 </div>
 
             </div>
 
             <!-- Right Slide Button -->
-            <button id="slideRight" class="absolute right-0 z-10 bg-gray-200 p-2 rounded-full shadow-lg focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <button id="slideRight" class="absolute right-[-10px] z-10 bg-gray-200 p-1 md:p-2 rounded-full shadow-lg focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 md:h-6 w-4 md:w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
             </button>
@@ -678,11 +796,12 @@
 </section>
 
 
+
 <!-- offer images -->
 
 
 
-<div class="container mx-auto px-4 py-8">
+<div class="container mx-auto px-4 py-4 md:py-8">
     <!-- Main Grid Container -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <!-- Large Image Box -->
@@ -854,38 +973,7 @@
 
 
 
-    const slidertwo = document.getElementById('slidertwo');
-    const slideLefttwo = document.getElementById('slideLefttwo');
-    const slideRighttwo = document.getElementById('slideRighttwo');
-
-    slideLefttwo.addEventListener('click', () => {
-    slidertwo.scrollBy({ left: -200, behavior: 'smooth' });
-    });
-
-    slideRighttwo.addEventListener('click', () => {
-    slidertwo.scrollBy({ left: 200, behavior: 'smooth' });
-    });
-
-
-
-    // Function to check if the content overflows
-    function checkOverflow() {
-        const isOverflowing = slidertwo.scrollWidth > slidertwo.clientWidth;
-        slideLefttwo.style.display = isOverflowing ? 'block' : 'none';
-        slideRighttwo.style.display = isOverflowing ? 'block' : 'none';
-    }
-
-    function scrollLeft() {
-        slidertwo.scrollBy({ left: -200, behavior: 'smooth' });
-    }
-
-    function scrollRight() {
-        slidertwo.scrollBy({ left: 200, behavior: 'smooth' });
-    }
-
-    // Run the checkOverflow function on load and resize
-    window.addEventListener('load', checkOverflow);
-    window.addEventListener('resize', checkOverflow);
+    
 
     
 
