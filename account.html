@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Include Flowbite CSS and JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.4.0/flowbite.min.css" />
+
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+	<script src="https://kit.fontawesome.com/a332771804.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="ckeditor/ckeditor-init.js"></script>
+    <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 
+</head>
+<body class="">
+    <header class="shadow-md">
+        <section class="wrapper flex justify-between items-center h-[80px]">
+            <h1>
+                <a href="index.html">
+                    <img src="./images/logooo.png" alt="logo" class="w-[50px] h-[50px]">
+                </a>
+            </h1>
+            
+            
+            <form action="/" method="get" class="w-[30%] hidden md:block">
+                <div class="flex justify-between items-center border hover:border-purple-500 rounded-full py-2 px-5">
+                    <input type="text" name="q" class="outline-none w-full placeholder:text-[13px] font-thin" placeholder="What are you looking for?" required>
+                    <button type="submit" class="w-[16px]">
+                        <img src="./images/search.png" alt="image" class="w-[16px]">
+                    </button>
+                </div>
+            </form>
+            <div class="">
+                <ul class="flex justify-end items-center">                
+                    <li class="mr-1 md:mr-7">                   
+                        <a href="whishlist.html" class="text-[16px] font-semibold flex items-center hover:text-purple-500">
+                            <i class='text-[35px] md:text-[16px] md:font-bold mr-[5px] bx bx-heart'></i>
+                            <p class="hidden md:block">Wishlist</p>
+                        </a>
+                    </li>
+                    <li class="mr-7 px-3 border-l border-r">
+                        <a href="cart.html" class="relative hover:text-purple-500">
+                            <i class='text-[35px] bx bx-cart'></i>
+                            <span class="absolute p-[3px] px-[6px] bg-gray-600 rounded-[100%] text-white text-[9px] top--18 right-[-8px]">
+                                2
+                            </span>
+                        </a>
+                    </li>
+                    <li id="profile-menu-button" class="mr-7 hidden md:block cursor-pointer hover:text-purple-500">                    
+                        <p class="text-[16px] font-semibold flex items-center">
+                            <i class='font-bold mr-[5px] bx bx-user'></i>
+                            <a>Account</a>
+                        </p>
+                    </li>
+    
+                    <div id="profile-menu" class="hidden absolute z-50 top-[80px] bg-gray-100 right-[5%] border shadow rounded-b-xl p-5 w-[240px]">
+                        <p class="font-semibold border-b pb-2 hover:text-purple-500">My Account</p>
+                        <p class="text-[16px] py-2 hover:text-purple-500">
+                            <a href="account.html">Manage Profile</a>
+                        </p>
+                        <p class="text-[16px] py-2 hover:text-purple-500">
+                            <a href="#">View Orders</a>
+                        </p>
+                        <p class="text-[16px] py-2 hover:text-purple-500 border-b">
+                            <a href="#">Manage Whishlist</a>
+                        </p>
+                        <!-- <p class="text-[16px] py-2 hover:text-purple-500 border-b">
+                            <a href="#">Logout</a>
+                        </p> -->
+                        <p class="text-[16px] pt-2 hover:text-purple-500">
+                            <a href="login.html">Login</a>
+                        </p>
+                    </div>
+    
+                    <li class="md:hidden">
+                        <img id="mobile-menu-button" src="./images/menu.png" alt="icon" class="w-[28px]">
+                    </li>
+                    <div id="mobile-menu" class="hidden absolute top-0 left-0 h-screen z-10 w-[70%] bg-gray-200">
+                        <div class="h-[100px] bg-slate-600 p-4 flex justify-start items-center text-white">
+                            <img src="./images/user.png" alt="icon" class="w-[30px]">
+                            <div class="ml-3  hover:text-purple-500">
+                                <p class="text-[14px] font-semibold">
+                                    #
+                                </p>
+                                <a href="#" class="text-[14px] font-normal mb-1  hover:text-purple-500">
+                                    #
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <p class="pb-3 mb-3 border-b border-gray-300">
+                                <a href="#" class="text-[16px] font-semibold  hover:text-purple-500">All Categories</a>
+                            </p>
+                            <p class="pb-3 mb-3 border-b border-gray-300">
+                                <a href="cart.html" class="text-[16px] font-semibold hover:text-purple-500">Cart</a>
+                            </p>
+                            <p class="pb-3 mb-3 border-b border-gray-300">
+                                <a href="3" class="text-[16px] font-semibold hover:text-purple-500">View Orders</a>
+                            </p>
+                            <p class="pb-3 mb-3 border-b border-gray-300">
+                                <a href="#" class="text-[16px] font-semibold hover:text-purple-500">Manage Account</a>
+                            </p>
+                            <p class="pb-3 mb-3 border-b border-gray-300">
+                                <a href="#" class="text-[16px] font-semibold hover:text-purple-500">Manage Whishlist</a>
+                            </p>
+                            <!-- <p class="pb-3 mb-3 border-b border-gray-300">
+                                <a href="#" class="text-[16px] font-semibold hover:text-purple-500">Logout</a>
+                            </p> -->
+                            <p class="pb-3 mb-3 border-b border-gray-300">
+                                <a href="login.html" class="text-[16px] font-semibold hover:text-purple-500">Login</a>
+                            </p>
+                        </div>
+    
+                    </div>
+                </ul>
+            </div>
+        </section>
+        <section class="wrapper pb-4 md:hidden">
+            <form action="" method="get">
+                <div class="flex justify-between items-center border rounded-full py-2 px-5">
+                    <input type="text" class="outline-none w-full placeholder:text-[13px] font-thin" name="q" placeholder="What are you looking for?">
+                    <img src="./images/search.png" alt="image" class="w-[16px]">
+                </div>
+            </form>
+        </section>
+    </header>
+
+
+
+<section class="mt-[40px] px-[5%]">
+    <div class="max-w-[620px] m-auto">
+        <div class="flex px-[20px] py-[10px] w-[100%] m-auto shadow-md offset-y-2 opacity-90 border-[1px] rounded-[5px] h-[150px] items-center">
+            <img src="/images/man.png" alt="account" class="h-[70%] mr-[10px]">
+            <ul>
+                <li class="font-[500] mb-[5px]">MUHAMMAD JAMAL</li>
+                <li class="font-[500] mb-[5px]">+91 8086929793</li>
+                <li class="font-[500]">account@web.com</li>
+            </ul>
+        </div>
+        <ul class="w-[100%]">
+            <li class="w-[70%] h-[40px] flex items-center px-[20px] bg-purple-500 m-auto mt-[20px] rounded-[5px]">
+                <img src="./images/address.png" alt="address" class="h-[70%] mr-[15px]">
+                <p class="text-white font-[500]">Manage Address</p>
+            </li>
+            <li class="w-[70%] h-[40px] flex items-center px-[20px] bg-purple-500 m-auto mt-[20px] rounded-[5px]">
+                <a class="flex items-center" href="{% url 'web:orders' %}">
+                    <i class='text-[30px] mr-[15px] text-white bx bx-cart'></i>
+                    <p class="text-white font-[500]">Orders</p>
+                </a>
+            </li>
+            <li class="w-[70%] h-[40px] flex items-center px-[20px] bg-purple-500 m-auto mt-[20px] rounded-[5px]">
+                <img src="./images/logout.png" alt="logout" class="h-[70%] mr-[15px]">
+                <p class="text-white font-[500]">Logout</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="max-w-[620px] m-auto mt-[50px] px-[15px]">
+    <h2>
+        Recent Orders
+    </h2>
+    <div class="h-[150px] max-w-[620px] shadow-md offset-y-2 opacity-90 px-[20px] mt-[30px] rounded-[5px] mb-[30px]">
+        <div class="rounded-2xl p-5 border border-[#A41E11] mb-4">
+            <div class="flex justify-between items-start">
+                <div class="w-[20%]">
+                    <img src="./images/iphone.jpeg" alt="iphone 16" class="w-full rounded-xl">
+                </div>
+                <div class="w-[77%]">
+                    <p class="text-[12px] sm:text-[16px] md:text-[18px] font-semibold mb-1 sm:mb-2 md:mb-4">iPhone 16</p>
+                    <div class="flex justify-start items-center">
+                        <p class="line-through sm:text-[16px] md:text-[18px] mr-2">$1499</p>
+                        <p class="mr-3 text-[14px] sm:text-[18px] md:text-[20px] font-semibold flex items-start">
+                            <span class="sm:text-[16px] md:text-[18px] mr-1">$</span> 1399
+                        </p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 1 -->
+        <div class="rounded-2xl p-5 border border-[#A41E11] mb-4">
+            <div class="flex justify-between items-start">
+                <div class="w-[20%]">
+                    <img src="./images/iphone.jpeg" alt="iphone 16" class="w-full rounded-xl">
+                </div>
+                <div class="w-[77%]">
+                    <p class="text-[12px] sm:text-[16px] md:text-[18px] font-semibold mb-1 sm:mb-2 md:mb-4">iPhone 16</p>
+                    <div class="flex justify-start items-center">
+                        <p class="line-through sm:text-[16px] md:text-[18px] mr-2">$1499</p>
+                        <p class="mr-3 text-[14px] sm:text-[18px] md:text-[20px] font-semibold flex items-start">
+                            <span class="sm:text-[16px] md:text-[18px] mr-1">$</span> 1399
+                        </p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 1 -->
+        <div class="rounded-2xl p-5 border border-[#A41E11] mb-4">
+            <div class="flex justify-between items-start">
+                <div class="w-[20%]">
+                    <img src="./images/iphone.jpeg" alt="iphone 16" class="w-full rounded-xl">
+                </div>
+                <div class="w-[77%]">
+                    <p class="text-[12px] sm:text-[16px] md:text-[18px] font-semibold mb-1 sm:mb-2 md:mb-4">iPhone 16</p>
+                    <div class="flex justify-start items-center">
+                        <p class="line-through sm:text-[16px] md:text-[18px] mr-2">$1499</p>
+                        <p class="mr-3 text-[14px] sm:text-[18px] md:text-[20px] font-semibold flex items-start">
+                            <span class="sm:text-[16px] md:text-[18px] mr-1">$</span> 1399
+                        </p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="h-[40%] flex justify-between mt-[15px]">
+            <a href="#" class="text-white bg-[#2AC489] font-[600] h-[60%] px-[12px] py-[6px] rounded-[5px]">TRACK ORDER</a>
+            <p class="font-[500] text-red-600">processing</p>
+        </div>
+    </div>
+
+</section>
+<script>
+    // JavaScript to toggle the mobile menu
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    const profileMenuButton = document.getElementById('profile-menu-button');
+    const profileMenu = document.getElementById('profile-menu');
+
+
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+    profileMenuButton.addEventListener('click', () => {
+        profileMenu.classList.toggle('hidden');
+    });
+</script>
+
+</body>
+</html>

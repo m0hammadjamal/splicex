@@ -73,7 +73,7 @@
                 <div id="profile-menu" class="hidden absolute z-50 top-[80px] bg-gray-100 right-[5%] border shadow rounded-b-xl p-5 w-[240px]">
                     <p class="font-semibold border-b pb-2 hover:text-purple-500">My Account</p>
                     <p class="text-[16px] py-2 hover:text-purple-500">
-                        <a href="#">Manage Profile</a>
+                        <a href="account.html">Manage Profile</a>
                     </p>
                     <p class="text-[16px] py-2 hover:text-purple-500">
                         <a href="#">View Orders</a>
@@ -712,6 +712,31 @@
     </section>
 </section>
 
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+  var swiper = new Swiper(".swiper-container", {
+    slidesPerView: 5,
+    centeredSlides: false,
+    breakpoints: {
+      640: {
+        slidesPerView: 6,
+    },
+    768: {
+        slidesPerView: 8,
+    },
+    },
+    autoplay: {
+      delay: 2000,
+    },
+    pagination: {                      
+      el: '.swiper-paginationone',
+  },
+});
+
+});
+</script>
 
 
 <!-- best sellers -->

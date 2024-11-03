@@ -18,27 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-document.addEventListener('DOMContentLoaded', function () {
-  var swiper = new Swiper(".swiper-container", {
-    slidesPerView: 5,
-    centeredSlides: false,
-    breakpoints: {
-      640: {
-        slidesPerView: 6,
-    },
-    768: {
-        slidesPerView: 8,
-    },
-    },
-    autoplay: {
-      delay: 2000,
-    },
-    pagination: {                      
-      el: '.swiper-pagination',
-  },
-});
 
-});
 
 
 
