@@ -1,21 +1,5 @@
 // JavaScript for dropdown functionality
-document.addEventListener('DOMContentLoaded', function () {
-    var swiper = new Swiper(".mySwiper", {
-      centeredSlides: false,
-      breakpoints: {
-          480: {
-            slidesPerView: 1
-        }
-      },
-      autoplay: {
-        delay: 2000,
-      },
-      pagination: {                      
-        el: '.swiper-pagination',
-    },
-  });
 
-});
 
 
 
