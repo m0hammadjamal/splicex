@@ -386,7 +386,22 @@
 
     </section>
 </section>
+<script>
+    // JavaScript to toggle the mobile menu
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
 
+    const profileMenuButton = document.getElementById('profile-menu-button');
+    const profileMenu = document.getElementById('profile-menu');
+
+
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+    profileMenuButton.addEventListener('click', () => {
+        profileMenu.classList.toggle('hidden');
+    });
+</script>
 
 </body>
 </html>

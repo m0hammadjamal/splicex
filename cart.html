@@ -348,7 +348,22 @@
 </footer>
 
 
+<script>
+    // JavaScript to toggle the mobile menu
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
 
+    const profileMenuButton = document.getElementById('profile-menu-button');
+    const profileMenu = document.getElementById('profile-menu');
+
+
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+    profileMenuButton.addEventListener('click', () => {
+        profileMenu.classList.toggle('hidden');
+    });
+</script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.4.0/flowbite.min.js"></script>
 

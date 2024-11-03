@@ -529,7 +529,22 @@
     </section>
 </footer>
 
+<script>
+    // JavaScript to toggle the mobile menu
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
 
+    const profileMenuButton = document.getElementById('profile-menu-button');
+    const profileMenu = document.getElementById('profile-menu');
+
+
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+    profileMenuButton.addEventListener('click', () => {
+        profileMenu.classList.toggle('hidden');
+    });
+</script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="./js/jquery-3.7.1.min.js"></script>
         <script src="./js/index.js"></script>
