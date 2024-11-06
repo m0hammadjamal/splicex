@@ -143,250 +143,106 @@
 </header>
 
 
-<section class="py-10 md:py-14">
-    <section class="wrapper">
-        <p class="text-[18px] font-semibold mb-7 flex items-center">
-            <button onclick="window.history.back()" class="hover:text-purple-500 font-semibold text-[18px] flex items-center">
-                <i class='text-[20px] md:text-[20px] mr-2 font-bold bx bx-arrow-back'></i>
-            </button>
-            My Whishlist
-        </p>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 md:gap-10">
-            <div class="col-span-1 p-3 shadow-lg rounded-xl relative">
-                <div class="absolute right-5 top-5 p-2 rounded-full bg-gray-200">
-                    <a href="#">
-                        <img src="./images/like.png" alt="image" class="w-[14px]">
-                    </a>
+    <section class="py-10">
+        <section class="wrapper">
+            <p class="text-[18px] font-semibold mb-7 flex items-center">
+                <button onclick="window.history.back()" class="hover:text-purple-500 font-semibold text-[18px] flex items-center">
+                    <i class='text-[20px] md:text-[20px] mr-2 font-bold bx bx-arrow-back'></i>
+                </button>
+                Checkout
+            </p>
+            <form action="" method="post" enctype="multipart/form-data">
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-10">
+                    <div class="col-span-1 md:col-span-3">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-[18px] font-semibold mb-5">Contact Information</h3>
+                        </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10">
+                                <div class="p-1 border rounded-xl px-5 col-span-1">
+                                    <input type="text" class="w-full py-3 bg-white text-gray-500 placeholder:text-gray-400 placeholder:text-[13px] text-[14px] outline-none" required name="first_name" placeholder="first_name" value="first_name">
+                                </div>
+                                <div class="p-1 border rounded-xl px-5 col-span-1">
+                                    <input type="text" class="w-full py-3 bg-white text-gray-500 placeholder:text-gray-400 placeholder:text-[13px] text-[14px] outline-none" required name="last_name" placeholder="Last Name" value="last_name">
+                                </div>
+                                <div class="p-1 border rounded-xl px-5 col-span-1">
+                                    <input type="text" class="w-full py-3 bg-white text-gray-500 placeholder:text-gray-400 placeholder:text-[13px] text-[14px] outline-none" required name="email" placeholder="Email" value="example@gmail.com">
+                                </div>
+                                <div class="p-1 border rounded-xl px-5 col-span-1">
+                                    <input type="text" class="w-full py-3 bg-white text-gray-500 placeholder:text-gray-400 placeholder:text-[13px] text-[14px] outline-none" required name="phone_number" placeholder="Phone Number" value="phone_number">
+                                </div>
+                            </div>
+                            <!-- <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10">
+                                <div class="p-1 border rounded-xl px-5 col-span-1">
+                                    <input type="text" class="w-full py-3 bg-white text-gray-500 placeholder:text-gray-400 placeholder:text-[13px] text-[14px] outline-none" required name="first_name" placeholder="First Name">
+                                </div>
+                                <div class="p-1 border rounded-xl px-5 col-span-1">
+                                    <input type="text" class="w-full py-3 bg-white text-gray-500 placeholder:text-gray-400 placeholder:text-[13px] text-[14px] outline-none" required name="last_name" placeholder="Last Name">
+                                </div>
+                                <div class="p-1 border rounded-xl px-5 col-span-1">
+                                    <input type="text" class="w-full py-3 bg-white text-gray-500 placeholder:text-gray-400 placeholder:text-[13px] text-[14px] outline-none" required name="email" placeholder="Email">
+                                </div>
+                                <div class="p-1 border rounded-xl px-5 col-span-1">
+                                    <input type="number" class="w-full py-3 bg-white text-gray-500 placeholder:text-gray-400 placeholder:text-[13px] text-[14px] outline-none" required name="phone_number" placeholder="Phone Number">
+                                </div>
+                            </div> -->
+                        <h3 class="text-[18px] font-semibold mb-5">Shipping & Billing Information</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-6 gap-5 mb-10">
+                            <div class="p-1 border rounded-xl px-5 col-span-1 md:col-span-3">
+                                <input type="text" class="w-full py-3 bg-white text-gray-500 placeholder:text-gray-400 placeholder:text-[13px] text-[14px] outline-none" required name="address1" placeholder="Appartment, suite, ect.">
+                            </div>
+                            <div class="p-1 border rounded-xl px-5 col-span-1 md:col-span-3">
+                                <input type="text" class="w-full py-3 bg-white text-gray-500 placeholder:text-gray-400 placeholder:text-[13px] text-[14px] outline-none" required name="address2" placeholder="Street address">
+                            </div>
+                            <div class="p-1 border rounded-xl px-5 col-span-1 md:col-span-2">
+                                <input type="text" class="w-full py-3 bg-white text-gray-500 placeholder:text-gray-400 placeholder:text-[13px] text-[14px] outline-none" required name="city" placeholder="City">
+                            </div>
+                            <div class="p-1 border rounded-xl px-5 col-span-1 md:col-span-2">
+                                <input type="text" class="w-full py-3 bg-white text-gray-500 placeholder:text-gray-400 placeholder:text-[13px] text-[14px] outline-none" required name="state" placeholder="State">
+                            </div>
+                            <div class="p-1 border rounded-xl px-5 col-span-1 md:col-span-2">
+                                <input type="number" class="w-full py-3 bg-white text-gray-500 placeholder:text-gray-400 placeholder:text-[13px] text-[14px] outline-none" required name="pincode" placeholder="Pincode">
+                            </div>
+                        </div>
+                        <h3 class="text-[18px] font-semibold mb-5">Payment Method</h3>
+                        <span class="text-gray-500 py-3 px-5 in border text-[14px] font-semibold rounded-md shadow-md">
+                            Cash On Delivery
+                        </span>
+                        
+                    </div>
+                    <div class="col-span-1 md:col-span-2">
+                        <div class="p-5 sm:p-7 md:p-10 rounded-2xl shadow-2xl mb-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <p class="text-[14px] font-thin opacity-80">SubTotal</p>
+                                <p class="text-[14px] flex items-start"><span class="text-[12px] mr-1">$</span> 1499</p>
+                            </div>
+                            <div class="flex justify-between items-center mb-2">
+                                <p class="text-[14px] font-thin opacity-80">Discount</p>
+                                <p class="text-[14px] flex items-start"><span class="text-[12px] mr-1">$</span> 50</p>
+                            </div>
+                            <div class="flex justify-between items-center mb-4">
+                                <p class="text-[14px] font-thin opacity-80">Shipping</p>
+                                <p class="text-[14px] flex items-start"><span class="text-[12px] mr-1"></span> Free</p>
+                            </div>
+                            <div class="mb-5 border-b"></div>
+                            <div class="flex justify-between items-center mb-7">
+                                <p class="text-[16px] font-semibold opacity-80">TOTAL</p>
+                                <p class="text-[16px] font-semibold flex items-start"><span class="text-[12px] mr-1">$</span> 1449</p>
+                            </div>
+                            <button type="submit" class="w-full text-white text-[16px] font-semibold rounded-full py-3 px-5 text-center block bg-[#A41E11]">
+                                Checkout
+                            </button>
+                            <div class="pt-10 flex justify-start items-start">
+                                <input type="checkbox" checked class="accent-[#A41E11] h-5 w-5 text-white mr-3">
+                                <p class="text-gray-400 text-[14px]">By confirming the order,i accept the <a href="#" class="text-[#3773ff98]">terms of the user agreement</a></p>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <a href="#">
-                    <img src="./images/iphone.jpeg" alt="image" class="w-full rounded-lg">
-                </a>
-                <h3 class="text-[15px] font-normal my-2">
-                    <a href="#">
-                        iphone 16
-                    </a>
-                </h3>
-                <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">$1499</p>
-                <p class="text-[14px] font-semibold mb-2">$1399</p>
-                <a href="#"></a>
-            </div>
-
-            <div class="col-span-1 p-3 shadow-lg rounded-xl relative">
-                <div class="absolute right-5 top-5 p-2 rounded-full bg-gray-200">
-                    <a href="#">
-                        <img src="./images/like.png" alt="image" class="w-[14px]">
-                    </a>
-                </div>
-                <a href="#">
-                    <img src="./images/macbook.jpeg" alt="image" class="w-full rounded-lg">
-                </a>
-                <h3 class="text-[15px] font-normal my-2">
-                    <a href="#">
-                        macbook air m3
-                    </a>
-                </h3>
-                <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">$1499</p>
-                <p class="text-[14px] font-semibold mb-2">$1399</p>
-                <a href="#"></a>
-            </div>
-
-            <div class="col-span-1 p-3 shadow-lg rounded-xl relative">
-                <div class="absolute right-5 top-5 p-2 rounded-full bg-gray-200">
-                    <a href="#">
-                        <img src="./images/like.png" alt="image" class="w-[14px]">
-                    </a>
-                </div>
-                <a href="#">
-                    <img src="./images/ipad-4.jpeg" alt="image" class="w-full rounded-lg">
-                </a>
-                <h3 class="text-[15px] font-normal my-2">
-                    <a href="#">
-                        ipad pro
-                    </a>
-                </h3>
-                <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">$1499</p>
-                <p class="text-[14px] font-semibold mb-2">$1399</p>
-                <a href="#"></a>
-            </div>
-
-            <div class="col-span-1 p-3 shadow-lg rounded-xl relative">
-                <div class="absolute right-5 top-5 p-2 rounded-full bg-gray-200">
-                    <a href="#">
-                        <img src="./images/like.png" alt="image" class="w-[14px]">
-                    </a>
-                </div>
-                <a href="#">
-                    <img src="./images/iphone.jpeg" alt="image" class="w-full rounded-lg">
-                </a>
-                <h3 class="text-[15px] font-normal my-2">
-                    <a href="#">
-                        iphone 16
-                    </a>
-                </h3>
-                <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">$1499</p>
-                <p class="text-[14px] font-semibold mb-2">$1399</p>
-                <a href="#"></a>
-            </div>
-
-            <div class="col-span-1 p-3 shadow-lg rounded-xl relative">
-                <div class="absolute right-5 top-5 p-2 rounded-full bg-gray-200">
-                    <a href="#">
-                        <img src="./images/like.png" alt="image" class="w-[14px]">
-                    </a>
-                </div>
-                <a href="#">
-                    <img src="./images/macbook.jpeg" alt="image" class="w-full rounded-lg">
-                </a>
-                <h3 class="text-[15px] font-normal my-2">
-                    <a href="#">
-                        macbook air m3
-                    </a>
-                </h3>
-                <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">$1499</p>
-                <p class="text-[14px] font-semibold mb-2">$1399</p>
-                <a href="#"></a>
-            </div>
-
-            <div class="col-span-1 p-3 shadow-lg rounded-xl relative">
-                <div class="absolute right-5 top-5 p-2 rounded-full bg-gray-200">
-                    <a href="#">
-                        <img src="./images/like.png" alt="image" class="w-[14px]">
-                    </a>
-                </div>
-                <a href="#">
-                    <img src="./images/ipad-4.jpeg" alt="image" class="w-full rounded-lg">
-                </a>
-                <h3 class="text-[15px] font-normal my-2">
-                    <a href="#">
-                        ipad pro
-                    </a>
-                </h3>
-                <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">$1499</p>
-                <p class="text-[14px] font-semibold mb-2">$1399</p>
-                <a href="#"></a>
-            </div>
-
-
-            <div class="col-span-1 p-3 shadow-lg rounded-xl relative">
-                <div class="absolute right-5 top-5 p-2 rounded-full bg-gray-200">
-                    <a href="#">
-                        <img src="./images/like.png" alt="image" class="w-[14px]">
-                    </a>
-                </div>
-                <a href="#">
-                    <img src="./images/iphone.jpeg" alt="image" class="w-full rounded-lg">
-                </a>
-                <h3 class="text-[15px] font-normal my-2">
-                    <a href="#">
-                        iphone 16
-                    </a>
-                </h3>
-                <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">$1499</p>
-                <p class="text-[14px] font-semibold mb-2">$1399</p>
-                <a href="#"></a>
-            </div>
-
-            <div class="col-span-1 p-3 shadow-lg rounded-xl relative">
-                <div class="absolute right-5 top-5 p-2 rounded-full bg-gray-200">
-                    <a href="#">
-                        <img src="./images/like.png" alt="image" class="w-[14px]">
-                    </a>
-                </div>
-                <a href="#">
-                    <img src="./images/macbook.jpeg" alt="image" class="w-full rounded-lg">
-                </a>
-                <h3 class="text-[15px] font-normal my-2">
-                    <a href="#">
-                        macbook air m3
-                    </a>
-                </h3>
-                <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">$1499</p>
-                <p class="text-[14px] font-semibold mb-2">$1399</p>
-                <a href="#"></a>
-            </div>
-
-            <div class="col-span-1 p-3 shadow-lg rounded-xl relative">
-                <div class="absolute right-5 top-5 p-2 rounded-full bg-gray-200">
-                    <a href="#">
-                        <img src="./images/like.png" alt="image" class="w-[14px]">
-                    </a>
-                </div>
-                <a href="#">
-                    <img src="./images/ipad-4.jpeg" alt="image" class="w-full rounded-lg">
-                </a>
-                <h3 class="text-[15px] font-normal my-2">
-                    <a href="#">
-                        ipad pro
-                    </a>
-                </h3>
-                <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">$1499</p>
-                <p class="text-[14px] font-semibold mb-2">$1399</p>
-                <a href="#"></a>
-            </div>
-
-
-            <div class="col-span-1 p-3 shadow-lg rounded-xl relative">
-                <div class="absolute right-5 top-5 p-2 rounded-full bg-gray-200">
-                    <a href="#">
-                        <img src="./images/like.png" alt="image" class="w-[14px]">
-                    </a>
-                </div>
-                <a href="#">
-                    <img src="./images/iphone.jpeg" alt="image" class="w-full rounded-lg">
-                </a>
-                <h3 class="text-[15px] font-normal my-2">
-                    <a href="#">
-                        iphone 16
-                    </a>
-                </h3>
-                <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">$1499</p>
-                <p class="text-[14px] font-semibold mb-2">$1399</p>
-                <a href="#"></a>
-            </div>
-
-            <div class="col-span-1 p-3 shadow-lg rounded-xl relative">
-                <div class="absolute right-5 top-5 p-2 rounded-full bg-gray-200">
-                    <a href="#">
-                        <img src="./images/like.png" alt="image" class="w-[14px]">
-                    </a>
-                </div>
-                <a href="#">
-                    <img src="./images/macbook.jpeg" alt="image" class="w-full rounded-lg">
-                </a>
-                <h3 class="text-[15px] font-normal my-2">
-                    <a href="#">
-                        macbook air m3
-                    </a>
-                </h3>
-                <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">$1499</p>
-                <p class="text-[14px] font-semibold mb-2">$1399</p>
-                <a href="#"></a>
-            </div>
-
-            <div class="col-span-1 p-3 shadow-lg rounded-xl relative">
-                <div class="absolute right-5 top-5 p-2 rounded-full bg-gray-200">
-                    <a href="#">
-                        <img src="./images/like.png" alt="image" class="w-[14px]">
-                    </a>
-                </div>
-                <a href="#">
-                    <img src="./images/ipad-4.jpeg" alt="image" class="w-full rounded-lg">
-                </a>
-                <h3 class="text-[15px] font-normal my-2">
-                    <a href="#">
-                        ipad pro
-                    </a>
-                </h3>
-                <p class="text-[10px] line-through text-gray-500 font-semibold mb-2">$1499</p>
-                <p class="text-[14px] font-semibold mb-2">$1399</p>
-                <a href="#"></a>
-            </div>
-
-            
-        </div>
-
+            </form>
+        </section>
     </section>
-</section>
+
 
 <!-- footer -->
 
