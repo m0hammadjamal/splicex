@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Include Flowbite CSS and JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.4.0/flowbite.min.css" />
+
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+	<script src="https://kit.fontawesome.com/a332771804.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="ckeditor/ckeditor-init.js"></script>
+    <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 
+</head>
+<body class="">
+    <header class="shadow-md">
+        <section class="wrapper flex justify-between items-center h-[80px]">
+            <h1>
+                <a href="index.html">
+                    <img src="./images/logooo.png" alt="logo" class="w-[50px] h-[50px]">
+                </a>
+            </h1>
+            
+            
+            <form action="/" method="get" class="w-[30%] hidden md:block">
+                <div class="flex justify-between items-center border hover:border-purple-500 rounded-full py-2 px-5">
+                    <input type="text" name="q" class="outline-none w-full placeholder:text-[13px] font-thin" placeholder="What are you looking for?" required>
+                    <button type="submit" class="w-[16px]">
+                        <img src="./images/search.png" alt="image" class="w-[16px]">
+                    </button>
+                </div>
+            </form>
+            <div class="">
+                <ul class="flex justify-end items-center">                
+                    <li class="mr-1 md:mr-7">                   
+                        <a href="whishlist.html" class="text-[16px] font-semibold flex items-center hover:text-purple-500">
+                            <i class='text-[35px] md:text-[16px] md:font-bold mr-[5px] bx bx-heart'></i>
+                            <p class="hidden md:block">Wishlist</p>
+                        </a>
+                    </li>
+                    <li class="mr-7 px-3 border-l border-r">
+                        <a href="cart.html" class="relative hover:text-purple-500">
+                            <i class='text-[35px] bx bx-cart'></i>
+                            <span class="absolute p-[3px] px-[6px] bg-gray-600 rounded-[100%] text-white text-[9px] top--18 right-[-8px]">
+                                2
+                            </span>
+                        </a>
+                    </li>
+                    <li id="profile-menu-button" class="mr-7 hidden md:block cursor-pointer hover:text-purple-500">                    
+                        <p class="text-[16px] font-semibold flex items-center">
+                            <i class='font-bold mr-[5px] bx bx-user'></i>
+                            <a>Account</a>
+                        </p>
+                    </li>
+    
+                    <div id="profile-menu" class="hidden absolute z-50 top-[80px] bg-gray-100 right-[5%] border shadow rounded-b-xl p-5 w-[240px]">
+                        <p class="font-semibold border-b pb-2 hover:text-purple-500">My Account</p>
+                        <p class="text-[16px] py-2 hover:text-purple-500">
+                            <a href="account.html">Manage Profile</a>
+                        </p>
+                        <p class="text-[16px] py-2 hover:text-purple-500">
+                            <a href="orders.html">View Orders</a>
+                        </p>
+                        <p class="text-[16px] py-2 hover:text-purple-500 border-b">
+                            <a href="whishlist.html">Manage Whishlist</a>
+                        </p>
+                        <!-- <p class="text-[16px] py-2 hover:text-purple-500 border-b">
+                            <a href="#">Logout</a>
+                        </p> -->
+                        <p class="text-[16px] pt-2 hover:text-purple-500">
+                            <a href="login.html">Login</a>
+                        </p>
+                    </div>
+    
+                    <li class="md:hidden">
+                        <img id="mobile-menu-button" src="./images/menu.png" alt="icon" class="w-[28px]">
+                    </li>
+                    <div id="mobile-menu" class="hidden absolute top-0 left-0 h-screen z-10 w-[70%] bg-gray-200">
+                        <div class="h-[100px] bg-slate-600 p-4 flex justify-start items-center text-white">
+                            <img src="./images/user.png" alt="icon" class="w-[30px]">
+                            <div class="ml-3  hover:text-purple-500">
+                                <p class="text-[14px] font-semibold">
+                                    FATHAH
+                                </p>
+                                <a href="#" class="text-[14px] font-normal mb-1  hover:text-purple-500">
+                                    My account
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <p class="pb-3 mb-3 border-b border-gray-300">
+                                <a href="#" class="text-[16px] font-semibold  hover:text-purple-500">All Categories</a>
+                            </p>
+                            <p class="pb-3 mb-3 border-b border-gray-300">
+                                <a href="cart.html" class="text-[16px] font-semibold hover:text-purple-500">Cart</a>
+                            </p>
+                            <p class="pb-3 mb-3 border-b border-gray-300">
+                                <a href="orders.html" class="text-[16px] font-semibold hover:text-purple-500">View Orders</a>
+                            </p>
+                            <p class="pb-3 mb-3 border-b border-gray-300">
+                                <a href="account.html" class="text-[16px] font-semibold hover:text-purple-500">Manage Account</a>
+                            </p>
+                            <p class="pb-3 mb-3 border-b border-gray-300">
+                                <a href="whishlist.html" class="text-[16px] font-semibold hover:text-purple-500">Manage Whishlist</a>
+                            </p>
+                            <!-- <p class="pb-3 mb-3 border-b border-gray-300">
+                                <a href="#" class="text-[16px] font-semibold hover:text-purple-500">Logout</a>
+                            </p> -->
+                            <p class="pb-3 mb-3 border-b border-gray-300">
+                                <a href="login.html" class="text-[16px] font-semibold hover:text-purple-500">Login</a>
+                            </p>
+                        </div>
+    
+                    </div>
+                </ul>
+            </div>
+        </section>
+        <section class="wrapper pb-4 md:hidden">
+            <form action="" method="get">
+                <div class="flex justify-between items-center border rounded-full py-2 px-5">
+                    <input type="text" class="outline-none w-full placeholder:text-[13px] font-thin" name="q" placeholder="What are you looking for?">
+                    <img src="./images/search.png" alt="image" class="w-[16px]">
+                </div>
+            </form>
+        </section>
+    </header>
+
+<section class="py-10 md:py-14">
+    <section class="wrapper">
+        <h2 class="text-3xl font-semibold mb-6 text-center">Our Services</h2>
+        <p class="text-lg text-gray-600 mb-10 text-center">
+            We offer a variety of services to meet your needs and help you achieve your goals.
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="p-6 border border-gray-300 rounded-xl shadow-md">
+                <img src="{% static 'web/images/service1.jpg' %}" alt="Service 1" class="w-full rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Service Title 1</h3>
+                <p class="text-gray-700 mb-4">
+                    Brief description of the service. Explain how it benefits your customers and what makes it unique.
+                </p>
+                <a href="#" class="text-[#A41E11] font-semibold">Learn More &rarr;</a>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="p-6 border border-gray-300 rounded-xl shadow-md">
+                <img src="{% static 'web/images/service2.jpg' %}" alt="Service 2" class="w-full rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Service Title 2</h3>
+                <p class="text-gray-700 mb-4">
+                    Brief description of the service. Explain how it benefits your customers and what makes it unique.
+                </p>
+                <a href="#" class="text-[#A41E11] font-semibold">Learn More &rarr;</a>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="p-6 border border-gray-300 rounded-xl shadow-md">
+                <img src="{% static 'web/images/service3.jpg' %}" alt="Service 3" class="w-full rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Service Title 3</h3>
+                <p class="text-gray-700 mb-4">
+                    Brief description of the service. Explain how it benefits your customers and what makes it unique.
+                </p>
+                <a href="#" class="text-[#A41E11] font-semibold">Learn More &rarr;</a>
+            </div>                        
+        </div>
+        <div>
+            <a href="#" >Request to Service</a>
+        </div>
+    </section>
+</section>
+
+<!-- footer -->
+
+
+<footer class="shadow-md bg-slate-100 pt-20 pb-10">
+    <section class="wrapper">
+        <!-- Contact Us Section -->
+        <h1 class="text-[18px] font-semibold mb-5">Contact Us</h1>
+        <div class="flex justify-between items-center flex-wrap">
+            <div class="flex justify-start items-center flex-wrap pb-5 mb-5 border-b-2">
+                <div class="p-4 rounded-lg shadow-xl bg-white mr-5 mb-5">
+                    <p class="text-[14px] font-semibold text-gray-600 hover:text-purple-500">support@example.com</p>
+                </div>
+                <div class="p-4 rounded-lg shadow-xl bg-white mr-5 mb-5">
+                    <p class="text-[14px] font-semibold text-gray-600 hover:text-purple-500">+91 53533 53657</p>
+                </div>
+            </div>
+            <div class="mb-5 flex items-center">
+                <a href="#" class="mr-3 p-2 bg-gray-300 rounded-lg">
+                    <i class="fa-brands fa-facebook text-[24px]"></i>
+                </a>
+                <a href="#" class="mr-3 p-2 bg-gray-300 rounded-lg">
+                    <i class="fa-brands fa-instagram text-[24px]"></i>
+                </a>
+                <a href="#" class="mr-3 p-2 bg-gray-300 rounded-lg">
+                    <i class="fa-brands fa-youtube text-[24px]"></i>
+                </a>
+                <a href="#" class="p-2 bg-gray-300 rounded-lg">
+                    <i class="fa-brands fa-twitter text-[24px]"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer Links Section -->
+        <div class="flex justify-between items-start flex-wrap">
+            <!-- Customer Service Links -->
+            <div class="w-[200px] mb-10">
+                <h2 class="text-[16px] font-semibold mb-3 text-gray-700">Customer Service</h2>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Help Center</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Order Tracking</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Shipping & Delivery</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Returns & Exchanges</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">FAQs</a></li>
+                </ul>
+            </div>
+
+            <!-- Company Links -->
+            <div class="w-[200px] mb-10">
+                <h2 class="text-[16px] font-semibold mb-3 text-gray-700">About Us</h2>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Our Story</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Careers</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Blog</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Press</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Product Categories Links -->
+            <div class="w-[200px] mb-10">
+                <h2 class="text-[16px] font-semibold mb-3 text-gray-700">Product Categories</h2>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Smartphones</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Laptops</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Tablets</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Accessories</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Wearables</a></li>
+                </ul>
+            </div>
+
+            <!-- Policies Links -->
+            <div class="w-[200px] mb-10">
+                <h2 class="text-[16px] font-semibold mb-3 text-gray-700">Policies</h2>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Privacy Policy</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Return Policy</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Terms of Service</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Warranty Information</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="border-t pt-5 flex justify-between items-center">
+            <p class="text-[12px] font-normal text-gray-400">© 2023. All rights reserved.</p>
+            <ul class="flex space-x-5">
+                <li><a href="#" class="text-[12px] font-normal text-gray-400 hover:text-purple-500">Privacy</a></li>
+                <li><a href="#" class="text-[12px] font-normal text-gray-400 hover:text-purple-500">Return Policy</a></li>
+                <li><a href="#" class="text-[12px] font-normal text-gray-400 hover:text-purple-500">Terms of Use</a></li>
+            </ul>
+        </div>
+    </section>
+</footer>
+
+<script>
+    // JavaScript to toggle the mobile menu
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    const profileMenuButton = document.getElementById('profile-menu-button');
+    const profileMenu = document.getElementById('profile-menu');
+
+
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+    profileMenuButton.addEventListener('click', () => {
+        profileMenu.classList.toggle('hidden');
+    });
+</script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="./js/jquery-3.7.1.min.js"></script>
+        <script src="./js/index.js"></script>
+</body>
+</html>

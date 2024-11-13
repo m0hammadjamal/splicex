@@ -1,11 +1,4 @@
 // JavaScript for dropdown functionality
-
-
-
-
-
-
-
 function handleOptionChange(radio) {
   var labels = document.querySelectorAll('.option-label');
   labels.forEach(function(label) {
