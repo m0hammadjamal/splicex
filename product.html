@@ -48,7 +48,13 @@
             </div>
         </form>
         <div class="">
-            <ul class="flex justify-end items-center">                
+            <ul class="flex justify-end items-center">   
+                <li class="mr-1 md:mr-7 hidden md:flex">                   
+                    <a href="whishlist.html" class="text-[16px] font-semibold flex items-center hover:text-purple-500">
+                        <img class="h-[35px] md:h-[16px] mr-[5px]" src="./images/service-icon.png" alt="service">
+                        <p class="hidden md:block">Service</p>
+                    </a>
+                </li>             
                 <li class="mr-1 md:mr-7">                   
                     <a href="whishlist.html" class="text-[16px] font-semibold flex items-center hover:text-purple-500">
                         <i class='text-[35px] md:text-[16px] md:font-bold mr-[5px] bx bx-heart'></i>
@@ -109,6 +115,9 @@
                             <a href="#" class="text-[16px] font-semibold  hover:text-purple-500">All Categories</a>
                         </p>
                         <p class="pb-3 mb-3 border-b border-gray-300">
+                            <a href="service.html" class="text-[16px] font-semibold hover:text-purple-500">Service</a>
+                        </p>
+                        <p class="pb-3 mb-3 border-b border-gray-300">
                             <a href="cart.html" class="text-[16px] font-semibold hover:text-purple-500">Cart</a>
                         </p>
                         <p class="pb-3 mb-3 border-b border-gray-300">
@@ -148,7 +157,19 @@
 
     <section class="lg:flex lg:justify-between items-center mt-[20px] lg:mt-0 min-h-[896px] m-auto">
         <div class="lg:pl-[60px] md:pl-[40px] sm:pl-[40px] pl-[16px] sm:pr-[40px] lg:pr-0 products m-auto md:items-center md:max-w-[606px]">
-            <div class="md:ml-[40px] lg:ml-3 flex justify-center m-auto">
+            <div class="md:ml-[40px] lg:ml-3 flex justify-center m-auto relative">
+                <div class="absolute md:left-[-80px] sm:left-1 left-[2px] top-0 p-2 rounded-full">
+                    <div class="p-2 rounded-full bg-gray-200">
+                    <a href="#">
+                        <img src="./images/like.png" alt="image" class="w-[14px]">
+                    </a>
+                    </div>
+                    <div class="p-2 rounded-full bg-gray-200 mt-5">
+                    <a href="#">
+                        <img src="./images/share.png" alt="image" class="w-[14px]">
+                    </a>
+                    </div>
+                </div>
                 <img src="./images/product-img.png" alt="img" class="sm:min-h-[516px] sm:max-h-[516px] sm:max-w-[413px] sm:min-w-[413px] min-w-[263.59px] max-w-[263.59px] min-h-[329px] max-h-[329px] mr-5">
             </div>
             <ul class="grid grid-cols-4 mt-5">
@@ -235,9 +256,9 @@
                 </li>
             </ul>
             <p class="text-[14px] font-[400] text-[#6C6C6C] leading-[24px] w-full mb-[24px]">Enhanced capabilities thanks toan enlarged display of 6.7 inchesand work without rechargingthroughout the day. Incredible photosas in weak, yesand in bright lightusing the new systemwith two cameras <span class="text-[14px] font-[400] leading-[24px] border-b-[1px] text-[#000] border-[#000]">more...</span></p>
-            <div class="grid sm:grid-cols-2 grid-cols-1 gap-[16px] mb-[24px]">
-                <button class="lg:w-[180px] sm:w-[240px] md:w-[340px] w-[280px] py-[16px] rounded-[6px] text-[16px] font-[500] m-auto text-[#000]" style="border: 1px solid #000000">Add to Wishlist</button>
-                <button class="lg:w-[180px] sm:w-[240px] md:w-[340px] w-[280px] text-[16px] font-[500] text-[#FFFFFF] py-[16px] m-auto rounded-[6px] bg-[#000000]">Add to Card</button>
+            <div class="mb-[24px]">
+                <!-- <button class="lg:w-[180px] sm:w-[240px] md:w-[340px] w-[280px] py-[16px] rounded-[6px] text-[16px] font-[500] m-auto text-[#000]" style="border: 1px solid #000000">Add to Wishlist</button> -->
+                <button class="w-full text-[16px] font-[500] text-[#FFFFFF] py-[16px] m-auto rounded-[6px] bg-[#000000]">Add to Card</button>
             </div>
             <ul class="grid grid-cols-3 justify-center gap-[8px] mb-[24px] m-auto">
                 <li class="sm:flex items-center">
