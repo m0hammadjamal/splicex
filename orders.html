@@ -30,7 +30,7 @@
  
 </head>
 <body class="">
-<header class="shadow-md">
+<header class="fixed top-0 left-0 w-full shadow-md bg-white z-50">
     <section class="wrapper flex justify-between items-center h-[80px]">
         <h1>
             <a href="index.html">
@@ -50,7 +50,7 @@
         <div class="">
             <ul class="flex justify-end items-center">   
                 <li class="mr-1 md:mr-7 hidden md:flex">                   
-                    <a href="whishlist.html" class="text-[16px] font-semibold flex items-center hover:text-purple-500">
+                    <a href="service.html" class="text-[16px] font-semibold flex items-center hover:text-purple-500">
                         <img class="h-[35px] md:h-[16px] mr-[5px]" src="./images/service-icon.png" alt="service">
                         <p class="hidden md:block">Service</p>
                     </a>
@@ -98,7 +98,7 @@
                 <li class="md:hidden">
                     <img id="mobile-menu-button" src="./images/menu.png" alt="icon" class="w-[28px]">
                 </li>
-                <div id="mobile-menu" class="hidden absolute top-0 left-0 h-screen z-10 w-[70%] bg-gray-200">
+                <div id="mobile-menu" class="hidden fixed top-0 left-0 h-full z-50 w-[70%] bg-gray-200">
                     <div class="h-[100px] bg-slate-600 p-4 flex justify-start items-center text-white">
                         <img src="./images/user.png" alt="icon" class="w-[30px]">
                         <div class="ml-3  hover:text-purple-500">
@@ -142,7 +142,7 @@
         </div>
     </section>
     <section class="wrapper pb-4 md:hidden">
-        <form action="" method="get">
+        <form action="" method="get" id="search-bar">
             <div class="flex justify-between items-center border rounded-full py-2 px-5">
                 <input type="text" class="outline-none w-full placeholder:text-[13px] font-thin" name="q" placeholder="What are you looking for?">
                 <img src="./images/search.png" alt="image" class="w-[16px]">
@@ -152,7 +152,7 @@
 </header>
 
 
-<section class="py-10 md:py-14">
+<section class="py-10 md:py-14 md:mt-[70px] mt-[130px]">
     <section class="wrapper">
         <p class="text-[18px] font-semibold mb-7 flex items-center">
             <button onclick="window.history.back()" class="hover:text-purple-500 font-semibold text-[18px] flex items-center">
@@ -328,6 +328,7 @@
 
 <script>
     // JavaScript to toggle the mobile menu
+    const searchBar = document.getElementById('search-bar');
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
 
@@ -340,6 +341,20 @@
     });
     profileMenuButton.addEventListener('click', () => {
         profileMenu.classList.toggle('hidden');
+    });
+
+
+          // Hide search bar on scroll
+          let lastScrollY = window.scrollY;
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > lastScrollY) {
+            searchBar.classList.add('hidden');
+            mobileSearchBar.classList.add('hidden');
+        } else {
+            searchBar.classList.remove('hidden');
+            mobileSearchBar.classList.remove('hidden');
+        }
+        lastScrollY = window.scrollY;
     });
 </script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

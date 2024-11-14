@@ -6,7 +6,7 @@
     <title>document</title>
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="./src/output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -27,160 +27,309 @@
     <script type="text/javascript" src="ckeditor/ckeditor-init.js"></script>
     <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 
 </head>
-<body>
-
-
-
-
-    <section class="bg-gray-100 py-10 relative">
-        <div class="wrapper mx-auto px-4 md:px-8 overflow-x-auto">
-            <div class="flex gap-6 whitespace-nowrap" id="scrollContainer">
-                <!-- Category Card -->
-                <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-4 flex flex-col items-center min-w-[150px]">
-                    <a href="#" class="flex flex-col items-center">
-                        <div class="rounded-full p-4 mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
-                            <i class="bx bx-mobile-alt text-gray-800 text-2xl"></i>
-                        </div>
-                        <p class="text-sm font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
-                    </a>
+<body class="">
+    <header class="fixed top-0 left-0 w-full shadow-md bg-white z-50">
+        <section class="wrapper flex justify-between items-center h-[80px] px-5">
+            <!-- Logo -->
+            <h1>
+                <a href="index.html">
+                    <img src="./images/logooo.png" alt="logo" class="w-[50px] h-[50px]">
+                </a>
+            </h1>
+            
+            <!-- Desktop Search Bar -->
+            <form action="/" method="get" id="search-bar" class="w-[30%] hidden md:block">
+                <div class="flex justify-between items-center border hover:border-purple-500 rounded-full py-2 px-5">
+                    <input type="text" name="q" class="outline-none w-full placeholder:text-[13px] font-thin" placeholder="What are you looking for?" required>
+                    <button type="submit" class="w-[16px]">
+                        <img src="./images/search.png" alt="search icon" class="w-[16px]">
+                    </button>
                 </div>
-                
-                
-                <!-- Category Card -->
-                <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-4 flex flex-col items-center min-w-[150px]">
-                    <a href="#" class="flex flex-col items-center">
-                        <div class="rounded-full p-4 mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
-                            <i class="bx bx-mobile-alt text-gray-800 text-2xl"></i>
-                        </div>
-                        <p class="text-sm font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
+            </form>
+    
+            <!-- Navigation Links and Buttons -->
+            <ul class="flex justify-end items-center">   
+                <li class="mr-1 md:mr-7 hidden md:flex">                   
+                    <a href="service.html" class="text-[16px] font-semibold flex items-center hover:text-purple-500">
+                        <img class="h-[35px] md:h-[16px] mr-[5px]" src="./images/service-icon.png" alt="service">
+                        <p class="hidden md:block">Service</p>
                     </a>
-                </div>
-
-                <!-- Category Card -->
-                <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-4 flex flex-col items-center min-w-[150px]">
-                    <a href="#" class="flex flex-col items-center">
-                        <div class="rounded-full p-4 mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
-                            <i class="bx bx-mobile-alt text-gray-800 text-2xl"></i>
-                        </div>
-                        <p class="text-sm font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
+                </li>             
+                <li class="mr-1 md:mr-7">                   
+                    <a href="whishlist.html" class="text-[16px] font-semibold flex items-center hover:text-purple-500">
+                        <i class='text-[35px] md:text-[16px] md:font-bold mr-[5px] bx bx-heart'></i>
+                        <p class="hidden md:block">Wishlist</p>
                     </a>
-                </div>
-
-                <!-- Category Card -->
-                <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-4 flex flex-col items-center min-w-[150px]">
-                    <a href="#" class="flex flex-col items-center">
-                        <div class="rounded-full p-4 mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
-                            <i class="bx bx-mobile-alt text-gray-800 text-2xl"></i>
-                        </div>
-                        <p class="text-sm font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
+                </li>
+                <li class="mr-7 px-3 border-l border-r">
+                    <a href="cart.html" class="relative hover:text-purple-500">
+                        <i class='text-[35px] bx bx-cart'></i>
+                        <span class="absolute p-[3px] px-[6px] bg-gray-600 rounded-[100%] text-white text-[9px] top--18 right-[-8px]">
+                            2
+                        </span>
                     </a>
+                </li>
+                <li id="profile-menu-button" class="mr-7 hidden md:block cursor-pointer hover:text-purple-500">                    
+                    <p class="text-[16px] font-semibold flex items-center">
+                        <i class='font-bold mr-[5px] bx bx-user'></i>
+                        <a>Account</a>
+                    </p>
+                </li>
+    
+                <li class="md:hidden">
+                    <img id="mobile-menu-button" src="./images/menu.png" alt="menu icon" class="w-[28px] cursor-pointer">
+                </li>
+            </ul>
+        </section>
+    
+        <!-- Mobile Search Bar -->
+        <section id="mobile-search-bar" class="wrapper pb-4 md:hidden">
+            <form action="/" method="get">
+                <div class="flex justify-between items-center border rounded-full py-2 px-5">
+                    <input type="text" class="outline-none w-full placeholder:text-[13px] font-thin" name="q" placeholder="What are you looking for?">
+                    <img src="./images/search.png" alt="search icon" class="w-[16px]">
                 </div>
+            </form>
+        </section>
+    </header>
+    
 
-                <!-- Category Card -->
-                <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-4 flex flex-col items-center min-w-[150px]">
-                    <a href="#" class="flex flex-col items-center">
-                        <div class="rounded-full p-4 mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
-                            <i class="bx bx-mobile-alt text-gray-800 text-2xl"></i>
-                        </div>
-                        <p class="text-sm font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
-                    </a>
-                </div>
-
-                <!-- Category Card -->
-                <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-4 flex flex-col items-center min-w-[150px]">
-                    <a href="#" class="flex flex-col items-center">
-                        <div class="rounded-full p-4 mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
-                            <i class="bx bx-mobile-alt text-gray-800 text-2xl"></i>
-                        </div>
-                        <p class="text-sm font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
-                    </a>
-                </div>
+    <button id="scrollTopBtn" class="fixed bottom-4 right-4 p-3 rounded-full bg-gray-600 text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
+        <!-- SVG for Up Arrow -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+    
 
 
-                <!-- Category Card -->
-                <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-4 flex flex-col items-center min-w-[150px]">
-                    <a href="#" class="flex flex-col items-center">
-                        <div class="rounded-full p-4 mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
-                            <i class="bx bx-mobile-alt text-gray-800 text-2xl"></i>
-                        </div>
-                        <p class="text-sm font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
-                    </a>
-                </div>
 
-                <!-- Category Card -->
-                <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-4 flex flex-col items-center min-w-[150px]">
-                    <a href="#" class="flex flex-col items-center">
-                        <div class="rounded-full p-4 mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
-                            <i class="bx bx-mobile-alt text-gray-800 text-2xl"></i>
-                        </div>
-                        <p class="text-sm font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
-                    </a>
-                </div>
-
-                <!-- Category Card -->
-                <div class="group hover:shadow-md transition-shadow duration-300 rounded-lg bg-white p-4 flex flex-col items-center min-w-[150px]">
-                    <a href="#" class="flex flex-col items-center">
-                        <div class="rounded-full p-4 mb-3 border border-gray-300 group-hover:scale-105 transform transition duration-300">
-                            <i class="bx bx-mobile-alt text-gray-800 text-2xl"></i>
-                        </div>
-                        <p class="text-sm font-medium text-gray-800 group-hover:text-gray-600 transition duration-300">Mobiles</p>
-                    </a>
-                </div>
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="hidden fixed top-0 left-0 h-full z-50 w-[70%] bg-gray-200">
+        <div class="h-[100px] bg-slate-600 p-4 flex justify-start items-center text-white">
+            <img src="./images/user.png" alt="user icon" class="w-[30px]">
+            <div class="ml-3 hover:text-purple-500">
+                <p class="text-[14px] font-semibold">MUHAMMAD</p>
+                <a href="#" class="text-[14px] font-normal mb-1 hover:text-purple-500">My account</a>
             </div>
         </div>
-    
-        <!-- Scroll Buttons -->
-        <button onclick="scrollLeft()" id="scrollLeftButton" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-300 rounded-full p-2 hover:bg-gray-400 hidden">
-            <i class="bx bx-chevron-left text-xl"></i>
-        </button>
-        <button onclick="scrollRight()" id="scrollRightButton" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-300 rounded-full p-2 hover:bg-gray-400 hidden">
-            <i class="bx bx-chevron-right text-xl"></i>
-        </button>
+        <div class="p-5">
+            <p class="pb-3 mb-3 border-b border-gray-300"><a href="#" class="text-[16px] font-semibold hover:text-purple-500">All Categories</a></p>
+            <p class="pb-3 mb-3 border-b border-gray-300"><a href="service.html" class="text-[16px] font-semibold hover:text-purple-500">Service</a></p>
+            <p class="pb-3 mb-3 border-b border-gray-300"><a href="cart.html" class="text-[16px] font-semibold hover:text-purple-500">Cart</a></p>
+            <p class="pb-3 mb-3 border-b border-gray-300"><a href="orders.html" class="text-[16px] font-semibold hover:text-purple-500">View Orders</a></p>
+            <p class="pb-3 mb-3 border-b border-gray-300"><a href="account.html" class="text-[16px] font-semibold hover:text-purple-500">Manage Account</a></p>
+            <p class="pb-3 mb-3 border-b border-gray-300"><a href="whishlist.html" class="text-[16px] font-semibold hover:text-purple-500">Manage Wishlist</a></p>
+            <p class="pb-3 mb-3 border-b border-gray-300"><a href="login.html" class="text-[16px] font-semibold hover:text-purple-500">Login</a></p>
+        </div>
+    </div>
+
+<section class="py-10 md:py-14">
+    <section class="wrapper">
+        <h2 class="text-3xl font-semibold mb-6 text-center">Our Services</h2>
+        <p class="text-lg text-gray-600 mb-10 text-center">
+            We offer a variety of services to meet your needs and help you achieve your goals.
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="p-6 border border-gray-300 rounded-xl shadow-md">
+                <img src="./images/service-1.jpg" alt="Service 1" class="w-full rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Service Title 1</h3>
+                <p class="text-gray-700 mb-4">
+                    Brief description of the service. Explain how it benefits your customers and what makes it unique.
+                </p>
+                <a href="#" class="text-[#A41E11] font-semibold">Learn More &rarr;</a>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="p-6 border border-gray-300 rounded-xl shadow-md">
+                <img src="./images/service-2.jpg" alt="Service 2" class="w-full rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Service Title 2</h3>
+                <p class="text-gray-700 mb-4">
+                    Brief description of the service. Explain how it benefits your customers and what makes it unique.
+                </p>
+                <a href="#" class="text-[#A41E11] font-semibold">Learn More &rarr;</a>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="p-6 border border-gray-300 rounded-xl shadow-md">
+                <img src="./images/service-3.avif" alt="Service 3" class="w-full rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Service Title 3</h3>
+                <p class="text-gray-700 mb-4">
+                    Brief description of the service. Explain how it benefits your customers and what makes it unique.
+                </p>
+                <a href="#" class="text-[#A41E11] font-semibold">Learn More &rarr;</a>
+            </div>                        
+        </div>
+        <div class="my-[24px]">
+            <!-- <button class="lg:w-[180px] sm:w-[240px] md:w-[340px] w-[280px] py-[16px] rounded-[6px] text-[16px] font-[500] m-auto text-[#000]" style="border: 1px solid #000000">Add to Wishlist</button> -->
+            <button class="w-full text-[16px] font-[500] text-[#FFFFFF] py-[16px] m-auto rounded-[6px] bg-[#0000009e]">Request Service</button>
+        </div>
     </section>
+</section>
+
+<!-- footer -->
+
+
+<footer class="shadow-md bg-slate-100 pt-20 pb-10">
+    <section class="wrapper">
+        <!-- Contact Us Section -->
+        <h1 class="text-[18px] font-semibold mb-5">Contact Us</h1>
+        <div class="flex justify-between items-center flex-wrap">
+            <div class="flex justify-start items-center flex-wrap pb-5 mb-5 border-b-2">
+                <div class="p-4 rounded-lg shadow-xl bg-white mr-5 mb-5">
+                    <p class="text-[14px] font-semibold text-gray-600 hover:text-purple-500">support@example.com</p>
+                </div>
+                <div class="p-4 rounded-lg shadow-xl bg-white mr-5 mb-5">
+                    <p class="text-[14px] font-semibold text-gray-600 hover:text-purple-500">+91 53533 53657</p>
+                </div>
+            </div>
+            <div class="mb-5 flex items-center">
+                <a href="#" class="mr-3 p-2 bg-gray-300 rounded-lg">
+                    <i class="fa-brands fa-facebook text-[24px]"></i>
+                </a>
+                <a href="#" class="mr-3 p-2 bg-gray-300 rounded-lg">
+                    <i class="fa-brands fa-instagram text-[24px]"></i>
+                </a>
+                <a href="#" class="mr-3 p-2 bg-gray-300 rounded-lg">
+                    <i class="fa-brands fa-youtube text-[24px]"></i>
+                </a>
+                <a href="#" class="p-2 bg-gray-300 rounded-lg">
+                    <i class="fa-brands fa-twitter text-[24px]"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer Links Section -->
+        <div class="flex justify-between items-start flex-wrap">
+            <!-- Customer Service Links -->
+            <div class="w-[200px] mb-10">
+                <h2 class="text-[16px] font-semibold mb-3 text-gray-700">Customer Service</h2>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Help Center</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Order Tracking</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Shipping & Delivery</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Returns & Exchanges</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">FAQs</a></li>
+                </ul>
+            </div>
+
+            <!-- Company Links -->
+            <div class="w-[200px] mb-10">
+                <h2 class="text-[16px] font-semibold mb-3 text-gray-700">About Us</h2>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Our Story</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Careers</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Blog</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Press</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Product Categories Links -->
+            <div class="w-[200px] mb-10">
+                <h2 class="text-[16px] font-semibold mb-3 text-gray-700">Product Categories</h2>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Smartphones</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Laptops</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Tablets</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Accessories</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Wearables</a></li>
+                </ul>
+            </div>
+
+            <!-- Policies Links -->
+            <div class="w-[200px] mb-10">
+                <h2 class="text-[16px] font-semibold mb-3 text-gray-700">Policies</h2>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Privacy Policy</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Return Policy</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Terms of Service</a></li>
+                    <li><a href="#" class="text-[14px] font-normal text-gray-500 hover:text-purple-500">Warranty Information</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="border-t pt-5 flex justify-between items-center">
+            <p class="text-[12px] font-normal text-gray-400">© 2023. All rights reserved.</p>
+            <ul class="flex space-x-5">
+                <li><a href="#" class="text-[12px] font-normal text-gray-400 hover:text-purple-500">Privacy</a></li>
+                <li><a href="#" class="text-[12px] font-normal text-gray-400 hover:text-purple-500">Return Policy</a></li>
+                <li><a href="#" class="text-[12px] font-normal text-gray-400 hover:text-purple-500">Terms of Use</a></li>
+            </ul>
+        </div>
+    </section>
+</footer>
+
+<script>
+    // JavaScript to handle scroll behavior and menu toggle
+    const searchBar = document.getElementById('search-bar');
+    const mobileSearchBar = document.getElementById('mobile-search-bar');
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
     
-    <script>
-        const scrollContainer = document.getElementById('scrollContainer');
-        const scrollLeftButton = document.getElementById('scrollLeftButton');
-        const scrollRightButton = document.getElementById('scrollRightButton');
-    
-        // Function to check if the content overflows
-        function checkOverflow() {
-            const isOverflowing = scrollContainer.scrollWidth > scrollContainer.clientWidth;
-            scrollLeftButton.style.display = isOverflowing ? 'block' : 'none';
-            scrollRightButton.style.display = isOverflowing ? 'block' : 'none';
+    // Hide search bar on scroll
+    let lastScrollY = window.scrollY;
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > lastScrollY) {
+            searchBar.classList.add('hidden');
+            mobileSearchBar.classList.add('hidden');
+        } else {
+            searchBar.classList.remove('hidden');
+            mobileSearchBar.classList.remove('hidden');
         }
-    
-        function scrollLeft() {
-            scrollContainer.scrollBy({ left: -200, behavior: 'smooth' });
+        lastScrollY = window.scrollY;
+    });
+
+    // Toggle mobile menu
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking outside
+    window.addEventListener('click', (e) => {
+        if (!mobileMenu.contains(e.target) && !mobileMenuButton.contains(e.target)) {
+            mobileMenu.classList.add('hidden');
         }
-    
-        function scrollRight() {
-            scrollContainer.scrollBy({ left: 200, behavior: 'smooth' });
-        }
-    
-        // Run the checkOverflow function on load and resize
-        window.addEventListener('load', checkOverflow);
-        window.addEventListener('resize', checkOverflow);
-    </script>
-    
+    });
 
 
 
 
 
+       // JavaScript to scroll to the top
+       const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+// Show button when scrolling down
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollTopBtn.style.display = "block";
+    } else {
+        scrollTopBtn.style.display = "none";
+    }
+};
+
+// Scroll to the top when the button is clicked
+scrollTopBtn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+</script>
+
+<style>
+    /* Additional styling if needed */
+    #search-bar.hidden, #mobile-search-bar.hidden {
+        display: none !important;
+    }
+</style>
 
 
-
-
-
-
-
-
-<!-- Include Swiper's JavaScript -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-
-
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="./js/jquery-3.7.1.min.js"></script>
+        <script src="./js/index.js"></script>
 </body>
 </html>
